@@ -22,11 +22,11 @@ import (
 //
 //   s3Code := glue_alpha.NewS3Code(bucket, jsii.String("key"))
 //
-// Experimental.
+// Deprecated.
 type S3Code interface {
 	Code
 	// Called when the Job is initialized to allow this object to bind.
-	// Experimental.
+	// Deprecated.
 	Bind(scope constructs.Construct, grantable awsiam.IGrantable) *CodeConfig
 }
 
@@ -35,7 +35,7 @@ type jsiiProxy_S3Code struct {
 	jsiiProxy_Code
 }
 
-// Experimental.
+// Deprecated.
 func NewS3Code(bucket awss3.IBucket, key *string) S3Code {
 	_init_.Initialize()
 
@@ -53,7 +53,7 @@ func NewS3Code(bucket awss3.IBucket, key *string) S3Code {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewS3Code_Override(s S3Code, bucket awss3.IBucket, key *string) {
 	_init_.Initialize()
 
@@ -65,7 +65,7 @@ func NewS3Code_Override(s S3Code, bucket awss3.IBucket, key *string) {
 }
 
 // Job code from a local disk path.
-// Experimental.
+// Deprecated.
 func S3Code_FromAsset(path *string, options *awss3assets.AssetOptions) AssetCode {
 	_init_.Initialize()
 
@@ -85,7 +85,7 @@ func S3Code_FromAsset(path *string, options *awss3assets.AssetOptions) AssetCode
 }
 
 // Job code as an S3 object.
-// Experimental.
+// Deprecated.
 func S3Code_FromBucket(bucket awss3.IBucket, key *string) S3Code {
 	_init_.Initialize()
 

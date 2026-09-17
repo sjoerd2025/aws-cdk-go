@@ -20,20 +20,20 @@ package awscdkgluealpha
 //   	Name: jsii.String("name"),
 //   }
 //
-// Experimental.
+// Deprecated.
 type TriggerOptions struct {
 	// The actions initiated by this trigger.
-	// Experimental.
+	// Deprecated.
 	Actions *[]Action `field:"required" json:"actions" yaml:"actions"`
 	// A description for the trigger.
 	// Default: - no description.
 	//
-	// Experimental.
+	// Deprecated.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// A name for the trigger.
 	// Default: - no name is provided.
 	//
-	// Experimental.
+	// Deprecated.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

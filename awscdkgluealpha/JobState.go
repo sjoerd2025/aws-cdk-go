@@ -4,30 +4,30 @@ package awscdkgluealpha
 // Job states emitted by Glue to CloudWatch Events.
 // See: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#glue-event-types for more information.
 //
-// Experimental.
+// Deprecated.
 type JobState string
 
 const (
 	// State indicating job run succeeded.
-	// Experimental.
+	// Deprecated.
 	JobState_SUCCEEDED JobState = "SUCCEEDED"
 	// State indicating job run failed.
-	// Experimental.
+	// Deprecated.
 	JobState_FAILED JobState = "FAILED"
 	// State indicating job run timed out.
-	// Experimental.
+	// Deprecated.
 	JobState_TIMEOUT JobState = "TIMEOUT"
 	// State indicating job is starting.
-	// Experimental.
+	// Deprecated.
 	JobState_STARTING JobState = "STARTING"
 	// State indicating job is running.
-	// Experimental.
+	// Deprecated.
 	JobState_RUNNING JobState = "RUNNING"
 	// State indicating job is stopping.
-	// Experimental.
+	// Deprecated.
 	JobState_STOPPING JobState = "STOPPING"
 	// State indicating job stopped.
-	// Experimental.
+	// Deprecated.
 	JobState_STOPPED JobState = "STOPPED"
 )
 

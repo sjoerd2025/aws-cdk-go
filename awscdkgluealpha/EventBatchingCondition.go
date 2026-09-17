@@ -19,15 +19,15 @@ import (
 //   	BatchWindow: cdk.Duration_Minutes(jsii.Number(30)),
 //   }
 //
-// Experimental.
+// Deprecated.
 type EventBatchingCondition struct {
 	// Number of events that must be received from Amazon EventBridge before EventBridge event trigger fires.
-	// Experimental.
+	// Deprecated.
 	BatchSize *float64 `field:"required" json:"batchSize" yaml:"batchSize"`
 	// Window of time in seconds after which EventBridge event trigger fires.
 	// Default: - 900 seconds.
 	//
-	// Experimental.
+	// Deprecated.
 	BatchWindow awscdk.Duration `field:"optional" json:"batchWindow" yaml:"batchWindow"`
 }
 

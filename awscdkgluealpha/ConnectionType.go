@@ -27,13 +27,13 @@ import (
 //
 // See: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectiontype
 //
-// Experimental.
+// Deprecated.
 type ConnectionType interface {
 	// The name of this ConnectionType, as expected by Connection resource.
-	// Experimental.
+	// Deprecated.
 	Name() *string
 	// The connection type name as expected by Connection resource.
-	// Experimental.
+	// Deprecated.
 	ToString() *string
 }
 
@@ -53,7 +53,7 @@ func (j *jsiiProxy_ConnectionType) Name() *string {
 }
 
 
-// Experimental.
+// Deprecated.
 func NewConnectionType(name *string) ConnectionType {
 	_init_.Initialize()
 
@@ -71,7 +71,7 @@ func NewConnectionType(name *string) ConnectionType {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewConnectionType_Override(c ConnectionType, name *string) {
 	_init_.Initialize()
 

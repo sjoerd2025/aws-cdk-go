@@ -6,21 +6,21 @@ package awscdkgluealpha
 // This property is only available for an uncompressed text file format.
 // See: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_EXTERNAL_TABLE.html#r_CREATE_EXTERNAL_TABLE-parameters - under _"TABLE PROPERTIES"_ > _"column_count_mismatch_handling"_
 //
-// Experimental.
+// Deprecated.
 type ColumnCountMismatchHandlingAction string
 
 const (
 	// Column count mismatch handling is turned off.
-	// Experimental.
+	// Deprecated.
 	ColumnCountMismatchHandlingAction_DISABLED ColumnCountMismatchHandlingAction = "DISABLED"
 	// Fail the query if the column count mismatch is detected.
-	// Experimental.
+	// Deprecated.
 	ColumnCountMismatchHandlingAction_FAIL ColumnCountMismatchHandlingAction = "FAIL"
 	// Fill missing values with NULL and ignore the additional values in each row.
-	// Experimental.
+	// Deprecated.
 	ColumnCountMismatchHandlingAction_SET_TO_NULL ColumnCountMismatchHandlingAction = "SET_TO_NULL"
 	// Drop all rows that contain column count mismatch error from the scan.
-	// Experimental.
+	// Deprecated.
 	ColumnCountMismatchHandlingAction_DROP_ROW ColumnCountMismatchHandlingAction = "DROP_ROW"
 )
 

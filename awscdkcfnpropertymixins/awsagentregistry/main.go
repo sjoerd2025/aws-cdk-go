@@ -80,6 +80,10 @@ func init() {
 		reflect.TypeOf((*CfnRegistryRecordPropsMixin_A2aAgentCardDescriptorProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@aws-cdk/cfn-property-mixins.aws_agentregistry.CfnRegistryRecordPropsMixin.AgUiDescriptorProperty",
+		reflect.TypeOf((*CfnRegistryRecordPropsMixin_AgUiDescriptorProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@aws-cdk/cfn-property-mixins.aws_agentregistry.CfnRegistryRecordPropsMixin.AgentSkillsAdditionalDataProperty",
 		reflect.TypeOf((*CfnRegistryRecordPropsMixin_AgentSkillsAdditionalDataProperty)(nil)).Elem(),
 	)
@@ -106,6 +110,10 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@aws-cdk/cfn-property-mixins.aws_agentregistry.CfnRegistryRecordPropsMixin.DescriptorsProperty",
 		reflect.TypeOf((*CfnRegistryRecordPropsMixin_DescriptorsProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@aws-cdk/cfn-property-mixins.aws_agentregistry.CfnRegistryRecordPropsMixin.HttpDescriptorProperty",
+		reflect.TypeOf((*CfnRegistryRecordPropsMixin_HttpDescriptorProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@aws-cdk/cfn-property-mixins.aws_agentregistry.CfnRegistryRecordPropsMixin.McpServerAdditionalDataProperty",
@@ -142,5 +150,13 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@aws-cdk/cfn-property-mixins.aws_agentregistry.CfnRegistryRecordPropsMixin.SkillMdSourceProperty",
 		reflect.TypeOf((*CfnRegistryRecordPropsMixin_SkillMdSourceProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@aws-cdk/cfn-property-mixins.aws_agentregistry.CfnRegistryRecordPropsMixin.SourceOnlyDescriptorSourceFromUrlProperty",
+		reflect.TypeOf((*CfnRegistryRecordPropsMixin_SourceOnlyDescriptorSourceFromUrlProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@aws-cdk/cfn-property-mixins.aws_agentregistry.CfnRegistryRecordPropsMixin.SourceOnlyDescriptorSourceProperty",
+		reflect.TypeOf((*CfnRegistryRecordPropsMixin_SourceOnlyDescriptorSourceProperty)(nil)).Elem(),
 	)
 }

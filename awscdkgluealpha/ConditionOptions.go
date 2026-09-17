@@ -12,12 +12,12 @@ package awscdkgluealpha
 //   	LogicalOperator: glue_alpha.ConditionLogicalOperator_EQUALS,
 //   }
 //
-// Experimental.
+// Deprecated.
 type ConditionOptions struct {
 	// The logical operator for the condition.
 	// Default: ConditionLogicalOperator.EQUALS
 	//
-	// Experimental.
+	// Deprecated.
 	LogicalOperator ConditionLogicalOperator `field:"optional" json:"logicalOperator" yaml:"logicalOperator"`
 }
 

@@ -29,10 +29,10 @@ import (
 //   	Schedule: glue.TriggerSchedule_Weekly(),
 //   })
 //
-// Experimental.
+// Deprecated.
 type TriggerSchedule interface {
 	// The expression string for the schedule.
-	// Experimental.
+	// Deprecated.
 	ExpressionString() *string
 }
 
@@ -55,7 +55,7 @@ func (j *jsiiProxy_TriggerSchedule) ExpressionString() *string {
 // Creates a new TriggerSchedule instance with a cron expression.
 //
 // Returns: A new TriggerSchedule instance.
-// Experimental.
+// Deprecated.
 func TriggerSchedule_Cron(options *awsevents.CronOptions) TriggerSchedule {
 	_init_.Initialize()
 
@@ -77,7 +77,7 @@ func TriggerSchedule_Cron(options *awsevents.CronOptions) TriggerSchedule {
 // Creates a schedule that fires once a day, at midnight UTC.
 //
 // Returns: A new TriggerSchedule instance.
-// Experimental.
+// Deprecated.
 func TriggerSchedule_Daily() TriggerSchedule {
 	_init_.Initialize()
 
@@ -96,7 +96,7 @@ func TriggerSchedule_Daily() TriggerSchedule {
 // Creates a new TriggerSchedule instance with a custom expression.
 //
 // Returns: A new TriggerSchedule instance.
-// Experimental.
+// Deprecated.
 func TriggerSchedule_Expression(expression *string) TriggerSchedule {
 	_init_.Initialize()
 
@@ -118,7 +118,7 @@ func TriggerSchedule_Expression(expression *string) TriggerSchedule {
 // Creates a schedule that fires once a week, at midnight UTC on Sunday.
 //
 // Returns: A new TriggerSchedule instance.
-// Experimental.
+// Deprecated.
 func TriggerSchedule_Weekly() TriggerSchedule {
 	_init_.Initialize()
 

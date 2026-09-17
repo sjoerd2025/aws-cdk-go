@@ -21,25 +21,25 @@ package awscdkgluealpha
 //   	StartOnCreation: jsii.Boolean(false),
 //   }
 //
-// Experimental.
+// Deprecated.
 type StartableTriggerOptions struct {
 	// The actions initiated by this trigger.
-	// Experimental.
+	// Deprecated.
 	Actions *[]Action `field:"required" json:"actions" yaml:"actions"`
 	// A description for the trigger.
 	// Default: - no description.
 	//
-	// Experimental.
+	// Deprecated.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// A name for the trigger.
 	// Default: - no name is provided.
 	//
-	// Experimental.
+	// Deprecated.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Whether to start the trigger on creation or not.
 	// Default: - false.
 	//
-	// Experimental.
+	// Deprecated.
 	StartOnCreation *bool `field:"optional" json:"startOnCreation" yaml:"startOnCreation"`
 }
 

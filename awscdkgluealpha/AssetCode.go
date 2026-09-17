@@ -75,11 +75,11 @@ import (
 //   	SourceKMSKey: keyRef,
 //   })
 //
-// Experimental.
+// Deprecated.
 type AssetCode interface {
 	Code
 	// Called when the Job is initialized to allow this object to bind.
-	// Experimental.
+	// Deprecated.
 	Bind(scope constructs.Construct, grantable awsiam.IGrantable) *CodeConfig
 }
 
@@ -88,7 +88,7 @@ type jsiiProxy_AssetCode struct {
 	jsiiProxy_Code
 }
 
-// Experimental.
+// Deprecated.
 func NewAssetCode(path *string, options *awss3assets.AssetOptions) AssetCode {
 	_init_.Initialize()
 
@@ -106,7 +106,7 @@ func NewAssetCode(path *string, options *awss3assets.AssetOptions) AssetCode {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewAssetCode_Override(a AssetCode, path *string, options *awss3assets.AssetOptions) {
 	_init_.Initialize()
 
@@ -118,7 +118,7 @@ func NewAssetCode_Override(a AssetCode, path *string, options *awss3assets.Asset
 }
 
 // Job code from a local disk path.
-// Experimental.
+// Deprecated.
 func AssetCode_FromAsset(path *string, options *awss3assets.AssetOptions) AssetCode {
 	_init_.Initialize()
 
@@ -138,7 +138,7 @@ func AssetCode_FromAsset(path *string, options *awss3assets.AssetOptions) AssetC
 }
 
 // Job code as an S3 object.
-// Experimental.
+// Deprecated.
 func AssetCode_FromBucket(bucket awss3.IBucket, key *string) S3Code {
 	_init_.Initialize()
 

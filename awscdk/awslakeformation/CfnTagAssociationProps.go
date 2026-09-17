@@ -5,7 +5,7 @@ package awslakeformation
 //
 // Example:
 //   import cdk "github.com/aws/aws-cdk-go/awscdk"
-//   import "github.com/aws/aws-cdk-go/awscdkgluealpha"
+//   import "github.com/aws/aws-cdk-go/awscdk"
 //   import "github.com/aws/aws-cdk-go/awscdk"
 //
 //   var stack Stack
@@ -17,21 +17,21 @@ package awslakeformation
 //   	"dev",
 //   }
 //
-//   database := awscdkgluealpha.NewDatabase(this, jsii.String("Database"))
+//   database := awscdk.NewDatabase(this, jsii.String("Database"))
 //
-//   table := awscdkgluealpha.NewS3Table(this, jsii.String("Table"), &S3TableProps{
+//   table := awscdk.NewS3Table(this, jsii.String("Table"), &S3TableProps{
 //   	Database: Database,
 //   	Columns: []Column{
 //   		&Column{
 //   			Name: jsii.String("col1"),
-//   			Type: awscdkgluealpha.Schema_STRING(),
+//   			Type: awscdk.Schema_STRING(),
 //   		},
 //   		&Column{
 //   			Name: jsii.String("col2"),
-//   			Type: awscdkgluealpha.Schema_STRING(),
+//   			Type: awscdk.Schema_STRING(),
 //   		},
 //   	},
-//   	DataFormat: awscdkgluealpha.DataFormat_CSV(),
+//   	DataFormat: awscdk.DataFormat_CSV(),
 //   })
 //
 //   synthesizer := stack.Synthesizer.(DefaultStackSynthesizer)

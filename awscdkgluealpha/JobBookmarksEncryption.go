@@ -18,7 +18,7 @@ import (
 //   	S3Encryption: glue.S3Encryption_Kms(),
 //   })
 //
-// Experimental.
+// Deprecated.
 type JobBookmarksEncryption interface {
 }
 
@@ -30,7 +30,7 @@ type jsiiProxy_JobBookmarksEncryption struct {
 // Client-side encryption (CSE) with an AWS KMS key managed by the account owner.
 // See: https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingClientSideEncryption.html
 //
-// Experimental.
+// Deprecated.
 func JobBookmarksEncryption_ClientSideKms(kmsKey interfacesawskms.IKeyRef) JobBookmarksEncryption {
 	_init_.Initialize()
 

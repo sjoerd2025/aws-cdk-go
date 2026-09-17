@@ -8,7 +8,7 @@ func validateFileSystem_FromEfsAccessPointParameters(ap awsefs.IAccessPoint, mou
 	return nil
 }
 
-func validateFileSystem_FromS3FilesAccessPointParameters(ap interfacesawss3files.IAccessPointRef, mountPath *string) error {
+func validateFileSystem_FromS3FilesAccessPointParameters(ap interfacesawss3files.IAccessPointRef, mountPath *string, options *S3FilesOptions) error {
 	return nil
 }
 

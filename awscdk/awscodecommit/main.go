@@ -24,7 +24,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "attrArn", GoGetter: "AttrArn"},
 			_jsii_.MemberProperty{JsiiProperty: "attrCloneUrlHttp", GoGetter: "AttrCloneUrlHttp"},
 			_jsii_.MemberProperty{JsiiProperty: "attrCloneUrlSsh", GoGetter: "AttrCloneUrlSsh"},
-			_jsii_.MemberProperty{JsiiProperty: "attrId", GoGetter: "AttrId"},
 			_jsii_.MemberProperty{JsiiProperty: "attrName", GoGetter: "AttrName"},
 			_jsii_.MemberProperty{JsiiProperty: "attrRepositoryId", GoGetter: "AttrRepositoryId"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},

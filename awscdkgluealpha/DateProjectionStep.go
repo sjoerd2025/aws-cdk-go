@@ -39,13 +39,13 @@ package awscdkgluealpha
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type DateProjectionStep struct {
 	// Interval between partition values.
-	// Experimental.
+	// Deprecated.
 	Interval *float64 `field:"required" json:"interval" yaml:"interval"`
 	// Unit for the interval.
-	// Experimental.
+	// Deprecated.
 	IntervalUnit DateIntervalUnit `field:"required" json:"intervalUnit" yaml:"intervalUnit"`
 }
 

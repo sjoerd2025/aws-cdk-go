@@ -16,9 +16,9 @@ import (
 //
 // See: https://docs.aws.amazon.com/glue/latest/dg/add-classifier.html#classifier-built-in
 //
-// Experimental.
+// Deprecated.
 type ClassificationString interface {
-	// Experimental.
+	// Deprecated.
 	Value() *string
 }
 
@@ -38,7 +38,7 @@ func (j *jsiiProxy_ClassificationString) Value() *string {
 }
 
 
-// Experimental.
+// Deprecated.
 func NewClassificationString(value *string) ClassificationString {
 	_init_.Initialize()
 
@@ -56,7 +56,7 @@ func NewClassificationString(value *string) ClassificationString {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewClassificationString_Override(c ClassificationString, value *string) {
 	_init_.Initialize()
 

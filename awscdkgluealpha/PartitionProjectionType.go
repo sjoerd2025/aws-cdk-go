@@ -6,21 +6,21 @@ package awscdkgluealpha
 // Determines how Athena projects partition values.
 // See: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-supported-types.html
 //
-// Experimental.
+// Deprecated.
 type PartitionProjectionType string
 
 const (
 	// Project partition values as integers within a range.
-	// Experimental.
+	// Deprecated.
 	PartitionProjectionType_INTEGER PartitionProjectionType = "INTEGER"
 	// Project partition values as dates within a range.
-	// Experimental.
+	// Deprecated.
 	PartitionProjectionType_DATE PartitionProjectionType = "DATE"
 	// Project partition values from an explicit list of values.
-	// Experimental.
+	// Deprecated.
 	PartitionProjectionType_ENUM PartitionProjectionType = "ENUM"
 	// Project partition values that are injected at query time.
-	// Experimental.
+	// Deprecated.
 	PartitionProjectionType_INJECTED PartitionProjectionType = "INJECTED"
 )
 

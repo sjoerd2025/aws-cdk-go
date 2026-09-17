@@ -74,7 +74,6 @@ type CfnRepository interface {
 	AttrCloneUrlHttp() *string
 	// When you pass the logical ID of this resource, the function returns the URL to use for cloning the repository over SSH.
 	AttrCloneUrlSsh() *string
-	AttrId() *string
 	// When you pass the logical ID of this resource, the function returns the repository's name.
 	AttrName() *string
 	// The ID of the repository.
@@ -342,16 +341,6 @@ func (j *jsiiProxy_CfnRepository) AttrCloneUrlSsh() *string {
 	_jsii_.Get(
 		j,
 		"attrCloneUrlSsh",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnRepository) AttrId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrId",
 		&returns,
 	)
 	return returns

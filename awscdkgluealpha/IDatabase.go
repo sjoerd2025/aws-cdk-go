@@ -10,18 +10,18 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-// Experimental.
+// Deprecated.
 type IDatabase interface {
 	interfacesawsglue.IDatabaseRef
 	awscdk.IResource
 	// The catalog this database belongs to.
-	// Experimental.
+	// Deprecated.
 	Catalog() ICatalog
 	// The ARN of the database.
-	// Experimental.
+	// Deprecated.
 	DatabaseArn() *string
 	// The name of the database.
-	// Experimental.
+	// Deprecated.
 	DatabaseName() *string
 }
 

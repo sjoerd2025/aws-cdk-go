@@ -21,10 +21,10 @@ import (
 //   	},
 //   }
 //
-// Experimental.
+// Deprecated.
 type CodeConfig struct {
 	// The location of the code in S3.
-	// Experimental.
+	// Deprecated.
 	S3Location *awss3.Location `field:"required" json:"s3Location" yaml:"s3Location"`
 }
 

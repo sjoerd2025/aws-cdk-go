@@ -35,7 +35,7 @@ import (
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type Action interface {
 }
 
@@ -44,7 +44,7 @@ type jsiiProxy_Action struct {
 	_ byte // padding
 }
 
-// Experimental.
+// Deprecated.
 func NewAction_Override(a Action) {
 	_init_.Initialize()
 
@@ -56,7 +56,7 @@ func NewAction_Override(a Action) {
 }
 
 // Create an action that runs a crawler.
-// Experimental.
+// Deprecated.
 func Action_Crawler(crawler interfacesawsglue.ICrawlerRef, options *CrawlerActionOptions) Action {
 	_init_.Initialize()
 
@@ -76,7 +76,7 @@ func Action_Crawler(crawler interfacesawsglue.ICrawlerRef, options *CrawlerActio
 }
 
 // Create an action that runs a job.
-// Experimental.
+// Deprecated.
 func Action_Job(job interfacesawsglue.IJobRef, options *JobActionOptions) Action {
 	_init_.Initialize()
 

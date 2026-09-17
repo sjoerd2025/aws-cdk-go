@@ -14,9 +14,9 @@ import (
 //
 //   outputFormat := glue_alpha.OutputFormat_AVRO()
 //
-// Experimental.
+// Deprecated.
 type OutputFormat interface {
-	// Experimental.
+	// Deprecated.
 	ClassName() *string
 }
 
@@ -36,7 +36,7 @@ func (j *jsiiProxy_OutputFormat) ClassName() *string {
 }
 
 
-// Experimental.
+// Deprecated.
 func NewOutputFormat(className *string) OutputFormat {
 	_init_.Initialize()
 
@@ -54,7 +54,7 @@ func NewOutputFormat(className *string) OutputFormat {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewOutputFormat_Override(o OutputFormat, className *string) {
 	_init_.Initialize()
 

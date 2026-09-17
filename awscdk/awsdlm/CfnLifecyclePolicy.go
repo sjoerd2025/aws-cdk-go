@@ -20,8 +20,6 @@ import (
 //   // The values are placeholders you should change.
 //   import "github.com/aws/aws-cdk-go/awscdk"
 //
-//   var excludeVolumeTypes interface{}
-//
 //   cfnLifecyclePolicy := awscdk.Aws_dlm.NewCfnLifecyclePolicy(this, jsii.String("MyCfnLifecyclePolicy"), &CfnLifecyclePolicyProps{
 //   	CopyTags: jsii.Boolean(false),
 //   	CreateInterval: jsii.Number(123),
@@ -40,8 +38,8 @@ import (
 //   				Value: jsii.String("value"),
 //   			},
 //   		},
-//   		ExcludeVolumeTypes: []interface{}{
-//   			excludeVolumeTypes,
+//   		ExcludeVolumeTypes: []*string{
+//   			jsii.String("excludeVolumeTypes"),
 //   		},
 //   	},
 //   	ExecutionRoleArn: jsii.String("executionRoleArn"),
@@ -98,8 +96,8 @@ import (
 //   					Value: jsii.String("value"),
 //   				},
 //   			},
-//   			ExcludeVolumeTypes: []interface{}{
-//   				excludeVolumeTypes,
+//   			ExcludeVolumeTypes: []*string{
+//   				jsii.String("excludeVolumeTypes"),
 //   			},
 //   		},
 //   		ExtendDeletion: jsii.Boolean(false),
@@ -951,6 +949,44 @@ func CfnLifecyclePolicy_ArnForLifecyclePolicy(resource interfacesawsdlm.ILifecyc
 		"aws-cdk-lib.aws_dlm.CfnLifecyclePolicy",
 		"arnForLifecyclePolicy",
 		[]interface{}{resource},
+		&returns,
+	)
+
+	return returns
+}
+
+// Creates a new ILifecyclePolicyRef from an ARN.
+func CfnLifecyclePolicy_FromLifecyclePolicyArn(scope constructs.Construct, id *string, arn *string) interfacesawsdlm.ILifecyclePolicyRef {
+	_init_.Initialize()
+
+	if err := validateCfnLifecyclePolicy_FromLifecyclePolicyArnParameters(scope, id, arn); err != nil {
+		panic(err)
+	}
+	var returns interfacesawsdlm.ILifecyclePolicyRef
+
+	_jsii_.StaticInvoke(
+		"aws-cdk-lib.aws_dlm.CfnLifecyclePolicy",
+		"fromLifecyclePolicyArn",
+		[]interface{}{scope, id, arn},
+		&returns,
+	)
+
+	return returns
+}
+
+// Creates a new ILifecyclePolicyRef from a policyId.
+func CfnLifecyclePolicy_FromPolicyId(scope constructs.Construct, id *string, policyId *string) interfacesawsdlm.ILifecyclePolicyRef {
+	_init_.Initialize()
+
+	if err := validateCfnLifecyclePolicy_FromPolicyIdParameters(scope, id, policyId); err != nil {
+		panic(err)
+	}
+	var returns interfacesawsdlm.ILifecyclePolicyRef
+
+	_jsii_.StaticInvoke(
+		"aws-cdk-lib.aws_dlm.CfnLifecyclePolicy",
+		"fromPolicyId",
+		[]interface{}{scope, id, policyId},
 		&returns,
 	)
 

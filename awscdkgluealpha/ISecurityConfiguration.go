@@ -8,11 +8,11 @@ import (
 )
 
 // Interface representing a created or an imported `SecurityConfiguration`.
-// Experimental.
+// Deprecated.
 type ISecurityConfiguration interface {
 	awscdk.IResource
 	// The name of the security configuration.
-	// Experimental.
+	// Deprecated.
 	SecurityConfigurationName() *string
 }
 

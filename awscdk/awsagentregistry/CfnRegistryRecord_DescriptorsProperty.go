@@ -61,8 +61,22 @@ package awsagentregistry
 //   		Data: jsii.String("data"),
 //   		DataSchemaVersion: jsii.String("dataSchemaVersion"),
 //   	},
+//   	Agui: &AgUiDescriptorProperty{
+//   		Source: &SourceOnlyDescriptorSourceProperty{
+//   			FromUrl: &SourceOnlyDescriptorSourceFromUrlProperty{
+//   				Url: jsii.String("url"),
+//   			},
+//   		},
+//   	},
 //   	Custom: &CustomDescriptorProperty{
 //   		Data: jsii.String("data"),
+//   	},
+//   	Http: &HttpDescriptorProperty{
+//   		Source: &SourceOnlyDescriptorSourceProperty{
+//   			FromUrl: &SourceOnlyDescriptorSourceFromUrlProperty{
+//   				Url: jsii.String("url"),
+//   			},
+//   		},
 //   	},
 //   	McpServer: &McpServerDescriptorProperty{
 //   		AdditionalData: &McpServerAdditionalDataProperty{
@@ -118,10 +132,22 @@ type CfnRegistryRecord_DescriptorsProperty struct {
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-agentregistry-registryrecord-descriptors.html#cfn-agentregistry-registryrecord-descriptors-agentskillsdefinition
 	//
 	AgentSkillsDefinition interface{} `field:"optional" json:"agentSkillsDefinition" yaml:"agentSkillsDefinition"`
+	// The AG-UI (Agent-User Interaction) descriptor, populated for records detected from an AG-UI protocol source.
+	//
+	// This descriptor is source-only: its content is synchronized from the configured source URL rather than supplied inline.
+	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-agentregistry-registryrecord-descriptors.html#cfn-agentregistry-registryrecord-descriptors-agui
+	//
+	Agui interface{} `field:"optional" json:"agui" yaml:"agui"`
 	// The custom descriptor, populated when the record type is CUSTOM.
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-agentregistry-registryrecord-descriptors.html#cfn-agentregistry-registryrecord-descriptors-custom
 	//
 	Custom interface{} `field:"optional" json:"custom" yaml:"custom"`
+	// The HTTP descriptor, populated for records detected from an HTTP protocol source.
+	//
+	// This descriptor is source-only: its content is synchronized from the configured source URL rather than supplied inline.
+	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-agentregistry-registryrecord-descriptors.html#cfn-agentregistry-registryrecord-descriptors-http
+	//
+	Http interface{} `field:"optional" json:"http" yaml:"http"`
 	// The MCP server descriptor, populated when the record type is MCP.
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-agentregistry-registryrecord-descriptors.html#cfn-agentregistry-registryrecord-descriptors-mcpserver
 	//

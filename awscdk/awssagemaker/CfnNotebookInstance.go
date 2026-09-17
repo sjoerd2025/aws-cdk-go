@@ -62,12 +62,16 @@ type CfnNotebookInstance interface {
 	interfacesawssagemaker.INotebookInstanceRef
 	awscdk.ITaggable
 	// A list of Amazon Elastic Inference (EI) instance types to associate with the notebook instance.
+	// Deprecated: this property has been deprecated.
 	AcceleratorTypes() *[]*string
+	// Deprecated: this property has been deprecated.
 	SetAcceleratorTypes(val *[]*string)
 	// An array of up to three Git repositories associated with the notebook instance.
 	AdditionalCodeRepositories() *[]*string
 	SetAdditionalCodeRepositories(val *[]*string)
 	AttrId() *string
+	// The Amazon Resource Name (ARN) of the notebook instance.
+	AttrNotebookInstanceArn() *string
 	// The name of the notebook instance, such as `MyNotebookInstance` .
 	AttrNotebookInstanceName() *string
 	// Options for this resource, such as condition, update policy etc.
@@ -359,6 +363,16 @@ func (j *jsiiProxy_CfnNotebookInstance) AttrId() *string {
 	_jsii_.Get(
 		j,
 		"attrId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnNotebookInstance) AttrNotebookInstanceArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrNotebookInstanceArn",
 		&returns,
 	)
 	return returns

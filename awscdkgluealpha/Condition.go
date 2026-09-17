@@ -26,7 +26,7 @@ import (
 //   	LogicalOperator: glue_alpha.ConditionLogicalOperator_EQUALS,
 //   })
 //
-// Experimental.
+// Deprecated.
 type Condition interface {
 }
 
@@ -35,7 +35,7 @@ type jsiiProxy_Condition struct {
 	_ byte // padding
 }
 
-// Experimental.
+// Deprecated.
 func NewCondition_Override(c Condition) {
 	_init_.Initialize()
 
@@ -47,7 +47,7 @@ func NewCondition_Override(c Condition) {
 }
 
 // Create a condition on the state of a crawler.
-// Experimental.
+// Deprecated.
 func Condition_Crawler(crawler interfacesawsglue.ICrawlerRef, crawlState CrawlerState, options *ConditionOptions) Condition {
 	_init_.Initialize()
 
@@ -67,7 +67,7 @@ func Condition_Crawler(crawler interfacesawsglue.ICrawlerRef, crawlState Crawler
 }
 
 // Create a condition on the state of a job.
-// Experimental.
+// Deprecated.
 func Condition_Job(job interfacesawsglue.IJobRef, state JobState, options *ConditionOptions) Condition {
 	_init_.Initialize()
 

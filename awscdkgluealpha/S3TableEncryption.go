@@ -29,7 +29,7 @@ import (
 //   	DataFormat: glue.DataFormat_JSON(),
 //   })
 //
-// Experimental.
+// Deprecated.
 type S3TableEncryption interface {
 }
 
@@ -39,7 +39,7 @@ type jsiiProxy_S3TableEncryption struct {
 }
 
 // Server-side encryption (SSE-KMS) with an AWS KMS key managed by the account owner.
-// Experimental.
+// Deprecated.
 func S3TableEncryption_Kms(key awskms.IKey) S3TableEncryption {
 	_init_.Initialize()
 
@@ -56,7 +56,7 @@ func S3TableEncryption_Kms(key awskms.IKey) S3TableEncryption {
 }
 
 // Server-side encryption (SSE-KMS) with an AWS KMS key managed by the KMS service.
-// Experimental.
+// Deprecated.
 func S3TableEncryption_KmsManaged() S3TableEncryption {
 	_init_.Initialize()
 
@@ -73,7 +73,7 @@ func S3TableEncryption_KmsManaged() S3TableEncryption {
 }
 
 // Server-side encryption (SSE-S3) with an Amazon S3-managed key.
-// Experimental.
+// Deprecated.
 func S3TableEncryption_S3Managed() S3TableEncryption {
 	_init_.Initialize()
 

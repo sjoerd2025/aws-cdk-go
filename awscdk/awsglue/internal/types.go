@@ -2,7 +2,9 @@ package internal
 import (
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/aws-cdk-go/awscdk/v2/interfaces/interfacesawsglue"
+	"github.com/aws/aws-cdk-go/awscdk/v2/awsiam"
 )
+type Type__awscdkResource = awscdk.Resource
 type Type__awscdkCfnResource = awscdk.CfnResource
 type Type__awscdkIInspectable = awscdk.IInspectable
 type Type__interfacesawsglueIBlueprintRef = interfacesawsglue.IBlueprintRef
@@ -35,3 +37,5 @@ type Type__interfacesawsglueITriggerRef = interfacesawsglue.ITriggerRef
 type Type__interfacesawsglueIUsageProfileRef = interfacesawsglue.IUsageProfileRef
 type Type__interfacesawsglueIUserDefinedFunctionRef = interfacesawsglue.IUserDefinedFunctionRef
 type Type__interfacesawsglueIWorkflowRef = interfacesawsglue.IWorkflowRef
+type Type__awscdkIResource = awscdk.IResource
+type Type__awsiamIGrantable = awsiam.IGrantable

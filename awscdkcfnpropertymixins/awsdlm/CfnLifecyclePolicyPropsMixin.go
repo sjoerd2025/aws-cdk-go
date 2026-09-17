@@ -20,7 +20,6 @@ import (
 //   import "github.com/aws/aws-cdk-go/awscdkcfnpropertymixins"
 //   import cdk "github.com/aws/aws-cdk-go/awscdk"
 //
-//   var excludeVolumeTypes interface{}
 //   var mergeStrategy IMergeStrategy
 //
 //   cfnLifecyclePolicyPropsMixin := awscdkcfnpropertymixins.Aws_dlm.NewCfnLifecyclePolicyPropsMixin(&CfnLifecyclePolicyMixinProps{
@@ -41,8 +40,8 @@ import (
 //   				Value: jsii.String("value"),
 //   			},
 //   		},
-//   		ExcludeVolumeTypes: []interface{}{
-//   			excludeVolumeTypes,
+//   		ExcludeVolumeTypes: []*string{
+//   			jsii.String("excludeVolumeTypes"),
 //   		},
 //   	},
 //   	ExecutionRoleArn: jsii.String("executionRoleArn"),
@@ -91,8 +90,8 @@ import (
 //   					Value: jsii.String("value"),
 //   				},
 //   			},
-//   			ExcludeVolumeTypes: []interface{}{
-//   				excludeVolumeTypes,
+//   			ExcludeVolumeTypes: []*string{
+//   				jsii.String("excludeVolumeTypes"),
 //   			},
 //   		},
 //   		ExtendDeletion: jsii.Boolean(false),

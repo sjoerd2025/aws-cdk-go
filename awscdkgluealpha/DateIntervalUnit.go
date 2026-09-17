@@ -38,30 +38,30 @@ package awscdkgluealpha
 //
 // See: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-supported-types.html#partition-projection-date-type
 //
-// Experimental.
+// Deprecated.
 type DateIntervalUnit string
 
 const (
 	// Year interval.
-	// Experimental.
+	// Deprecated.
 	DateIntervalUnit_YEARS DateIntervalUnit = "YEARS"
 	// Month interval.
-	// Experimental.
+	// Deprecated.
 	DateIntervalUnit_MONTHS DateIntervalUnit = "MONTHS"
 	// Week interval.
-	// Experimental.
+	// Deprecated.
 	DateIntervalUnit_WEEKS DateIntervalUnit = "WEEKS"
 	// Day interval (default).
-	// Experimental.
+	// Deprecated.
 	DateIntervalUnit_DAYS DateIntervalUnit = "DAYS"
 	// Hour interval.
-	// Experimental.
+	// Deprecated.
 	DateIntervalUnit_HOURS DateIntervalUnit = "HOURS"
 	// Minute interval.
-	// Experimental.
+	// Deprecated.
 	DateIntervalUnit_MINUTES DateIntervalUnit = "MINUTES"
 	// Second interval.
-	// Experimental.
+	// Deprecated.
 	DateIntervalUnit_SECONDS DateIntervalUnit = "SECONDS"
 )
 

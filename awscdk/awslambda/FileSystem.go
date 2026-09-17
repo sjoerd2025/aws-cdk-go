@@ -117,10 +117,10 @@ func FileSystem_FromEfsAccessPoint(ap awsefs.IAccessPoint, mountPath *string) Fi
 }
 
 // Mount the filesystem from Amazon S3 Files.
-func FileSystem_FromS3FilesAccessPoint(ap interfacesawss3files.IAccessPointRef, mountPath *string) FileSystem {
+func FileSystem_FromS3FilesAccessPoint(ap interfacesawss3files.IAccessPointRef, mountPath *string, options *S3FilesOptions) FileSystem {
 	_init_.Initialize()
 
-	if err := validateFileSystem_FromS3FilesAccessPointParameters(ap, mountPath); err != nil {
+	if err := validateFileSystem_FromS3FilesAccessPointParameters(ap, mountPath, options); err != nil {
 		panic(err)
 	}
 	var returns FileSystem
@@ -128,7 +128,7 @@ func FileSystem_FromS3FilesAccessPoint(ap interfacesawss3files.IAccessPointRef, 
 	_jsii_.StaticInvoke(
 		"aws-cdk-lib.aws_lambda.FileSystem",
 		"fromS3FilesAccessPoint",
-		[]interface{}{ap, mountPath},
+		[]interface{}{ap, mountPath, options},
 		&returns,
 	)
 

@@ -48,7 +48,6 @@ type CfnReplicationTask interface {
 	awscdk.IInspectable
 	interfacesawsdms.IReplicationTaskRef
 	awscdk.ITaggable
-	AttrId() *string
 	// The ARN of the ReplicationTask.
 	//
 	// Also serves the purpise of Primary Identifier.
@@ -310,16 +309,6 @@ type jsiiProxy_CfnReplicationTask struct {
 	internal.Type__awscdkIInspectable
 	internal.Type__interfacesawsdmsIReplicationTaskRef
 	internal.Type__awscdkITaggable
-}
-
-func (j *jsiiProxy_CfnReplicationTask) AttrId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrId",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_CfnReplicationTask) AttrReplicationTaskArn() *string {

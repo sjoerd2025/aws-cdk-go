@@ -7,12 +7,12 @@ import (
 	"github.com/aws/aws-cdk-go/awscdkgluealpha/v2/internal"
 )
 
-// Experimental.
+// Deprecated.
 type ITable interface {
 	awscdk.IResource
-	// Experimental.
+	// Deprecated.
 	TableArn() *string
-	// Experimental.
+	// Deprecated.
 	TableName() *string
 }
 

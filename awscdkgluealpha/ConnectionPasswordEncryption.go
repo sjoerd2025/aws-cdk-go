@@ -24,19 +24,19 @@ import (
 //
 // See: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectionPasswordEncryption.html
 //
-// Experimental.
+// Deprecated.
 type ConnectionPasswordEncryption struct {
 	// The KMS key used to encrypt connection passwords.
 	// Default: - an AWS-managed key is used and the key is not exposed as a grantable resource.
 	//
-	// Experimental.
+	// Deprecated.
 	KmsKey interfacesawskms.IKeyRef `field:"optional" json:"kmsKey" yaml:"kmsKey"`
 	// Whether passwords remain encrypted in the responses of `GetConnection` and `GetConnections`.
 	//
 	// This takes effect independently from catalog encryption.
 	// Default: true.
 	//
-	// Experimental.
+	// Deprecated.
 	ReturnConnectionPasswordEncrypted *bool `field:"optional" json:"returnConnectionPasswordEncrypted" yaml:"returnConnectionPasswordEncrypted"`
 }
 

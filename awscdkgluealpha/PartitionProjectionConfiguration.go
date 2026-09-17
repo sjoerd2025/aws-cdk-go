@@ -40,10 +40,10 @@ import (
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type PartitionProjectionConfiguration interface {
 	// The type of partition projection.
-	// Experimental.
+	// Deprecated.
 	Type() PartitionProjectionType
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_PartitionProjectionConfiguration) Type() PartitionProjectionT
 
 
 // Create a DATE partition projection configuration.
-// Experimental.
+// Deprecated.
 func PartitionProjectionConfiguration_Date(props *DatePartitionProjectionConfigurationProps) PartitionProjectionConfiguration {
 	_init_.Initialize()
 
@@ -84,7 +84,7 @@ func PartitionProjectionConfiguration_Date(props *DatePartitionProjectionConfigu
 }
 
 // Create an ENUM partition projection configuration.
-// Experimental.
+// Deprecated.
 func PartitionProjectionConfiguration_Enum(props *EnumPartitionProjectionConfigurationProps) PartitionProjectionConfiguration {
 	_init_.Initialize()
 
@@ -108,7 +108,7 @@ func PartitionProjectionConfiguration_Enum(props *EnumPartitionProjectionConfigu
 // Partition values are injected at query time through the query statement.
 // See: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-supported-types.html#partition-projection-injected-type
 //
-// Experimental.
+// Deprecated.
 func PartitionProjectionConfiguration_Injected() PartitionProjectionConfiguration {
 	_init_.Initialize()
 
@@ -125,7 +125,7 @@ func PartitionProjectionConfiguration_Injected() PartitionProjectionConfiguratio
 }
 
 // Create an INTEGER partition projection configuration.
-// Experimental.
+// Deprecated.
 func PartitionProjectionConfiguration_Integer(props *IntegerPartitionProjectionConfigurationProps) PartitionProjectionConfiguration {
 	_init_.Initialize()
 

@@ -2,18 +2,18 @@ package awscdkgluealpha
 
 
 // The job type.
-// Experimental.
+// Deprecated.
 type JobType string
 
 const (
 	// Command for running a Glue Spark job.
-	// Experimental.
+	// Deprecated.
 	JobType_ETL JobType = "ETL"
 	// Command for running a Glue Spark streaming job.
-	// Experimental.
+	// Deprecated.
 	JobType_STREAMING JobType = "STREAMING"
 	// Command for running a Glue python shell job.
-	// Experimental.
+	// Deprecated.
 	JobType_PYTHON_SHELL JobType = "PYTHON_SHELL"
 	// Command for running a Glue Ray job.
 	// Deprecated: AWS Glue for Ray is closed to new customers as of April 30, 2026.

@@ -70,8 +70,22 @@ import (
 //   			Data: jsii.String("data"),
 //   			DataSchemaVersion: jsii.String("dataSchemaVersion"),
 //   		},
+//   		Agui: &AgUiDescriptorProperty{
+//   			Source: &SourceOnlyDescriptorSourceProperty{
+//   				FromUrl: &SourceOnlyDescriptorSourceFromUrlProperty{
+//   					Url: jsii.String("url"),
+//   				},
+//   			},
+//   		},
 //   		Custom: &CustomDescriptorProperty{
 //   			Data: jsii.String("data"),
+//   		},
+//   		Http: &HttpDescriptorProperty{
+//   			Source: &SourceOnlyDescriptorSourceProperty{
+//   				FromUrl: &SourceOnlyDescriptorSourceFromUrlProperty{
+//   					Url: jsii.String("url"),
+//   				},
+//   			},
 //   		},
 //   		McpServer: &McpServerDescriptorProperty{
 //   			AdditionalData: &McpServerAdditionalDataProperty{
@@ -140,6 +154,8 @@ type CfnRegistryRecord interface {
 	awscdk.ITaggableV2
 	// The timestamp when the registry record was created.
 	AttrCreatedAt() *string
+	// The identifier of the AWS account that created the registry record.
+	AttrCreatedBy() *string
 	// The Amazon Resource Name (ARN) of the registry record.
 	AttrRecordArn() *string
 	// The unique identifier of the registry record.
@@ -399,6 +415,16 @@ func (j *jsiiProxy_CfnRegistryRecord) AttrCreatedAt() *string {
 	_jsii_.Get(
 		j,
 		"attrCreatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnRegistryRecord) AttrCreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrCreatedBy",
 		&returns,
 	)
 	return returns

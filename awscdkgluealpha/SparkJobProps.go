@@ -65,31 +65,31 @@ import (
 //   	},
 //   }
 //
-// Experimental.
+// Deprecated.
 type SparkJobProps struct {
 	// IAM Role (required) IAM Role to use for Glue job execution Must be specified by the developer because the L2 doesn't have visibility into the actions the script(s) takes during the job execution The role must trust the Glue service principal (glue.amazonaws.com) and be granted sufficient permissions.
 	// See: https://docs.aws.amazon.com/glue/latest/dg/getting-started-access.html
 	//
-	// Experimental.
+	// Deprecated.
 	Role awsiam.IRole `field:"required" json:"role" yaml:"role"`
 	// Script Code Location (required) Script to run when the Glue job executes.
 	//
 	// Can be uploaded
 	// from the local directory structure using fromAsset
 	// or referenced via S3 location using fromBucket.
-	// Experimental.
+	// Deprecated.
 	Script Code `field:"required" json:"script" yaml:"script"`
 	// Connections (optional) List of connections to use for this Glue job Connections are used to connect to other AWS Service or resources within a VPC.
 	// Default: [] - no connections are added to the job.
 	//
-	// Experimental.
+	// Deprecated.
 	Connections *[]IConnection `field:"optional" json:"connections" yaml:"connections"`
 	// Enables continuous logging with the specified props.
 	// See: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html
 	//
 	// Default: - continuous logging is enabled.
 	//
-	// Experimental.
+	// Deprecated.
 	ContinuousLogging *ContinuousLoggingProps `field:"optional" json:"continuousLogging" yaml:"continuousLogging"`
 	// Default Arguments (optional) The default arguments for every run of this Glue job, specified as name-value pairs.
 	//
@@ -111,22 +111,22 @@ type SparkJobProps struct {
 	//
 	// Default: - no arguments.
 	//
-	// Experimental.
+	// Deprecated.
 	DefaultArguments *map[string]*string `field:"optional" json:"defaultArguments" yaml:"defaultArguments"`
 	// Description (optional) Developer-specified description of the Glue job.
 	// Default: - no value.
 	//
-	// Experimental.
+	// Deprecated.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Glue Version The version of Glue to use to execute this job.
 	// Default: - determined by the job type: 4.0 for ETL and Streaming, 5.0 for Flex, 3.0 for Python Shell
 	//
-	// Experimental.
+	// Deprecated.
 	GlueVersion GlueVersion `field:"optional" json:"glueVersion" yaml:"glueVersion"`
 	// Name of the Glue job (optional) Developer-specified name of the Glue job.
 	// Default: - a name is automatically generated.
 	//
-	// Experimental.
+	// Deprecated.
 	JobName *string `field:"optional" json:"jobName" yaml:"jobName"`
 	// Max Concurrent Runs (optional) The maximum number of runs this Glue job can concurrently run.
 	//
@@ -134,55 +134,55 @@ type SparkJobProps struct {
 	// you can specify is controlled by a service limit.
 	// Default: 1.
 	//
-	// Experimental.
+	// Deprecated.
 	MaxConcurrentRuns *float64 `field:"optional" json:"maxConcurrentRuns" yaml:"maxConcurrentRuns"`
 	// Max Retries (optional) Maximum number of retry attempts Glue performs if the job fails.
 	// Default: 0.
 	//
-	// Experimental.
+	// Deprecated.
 	MaxRetries *float64 `field:"optional" json:"maxRetries" yaml:"maxRetries"`
 	// Security Configuration (optional) Defines the encryption options for the Glue job.
 	// Default: - no security configuration.
 	//
-	// Experimental.
+	// Deprecated.
 	SecurityConfiguration ISecurityConfiguration `field:"optional" json:"securityConfiguration" yaml:"securityConfiguration"`
 	// Tags (optional) A list of key:value pairs of tags to apply to this Glue job resources.
 	// Default: {} - no tags.
 	//
-	// Experimental.
+	// Deprecated.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Timeout (optional) The maximum time that a job run can consume resources before it is terminated and enters TIMEOUT status.
 	//
 	// Specified in minutes.
 	// Default: 2880 (2 days for non-streaming).
 	//
-	// Experimental.
+	// Deprecated.
 	Timeout awscdk.Duration `field:"optional" json:"timeout" yaml:"timeout"`
 	// Enable profiling metrics for the Glue job.
 	//
 	// When enabled, adds '--enable-metrics' to job arguments.
 	// Default: true.
 	//
-	// Experimental.
+	// Deprecated.
 	EnableMetrics *bool `field:"optional" json:"enableMetrics" yaml:"enableMetrics"`
 	// Enable observability metrics for the Glue job.
 	//
 	// When enabled, adds '--enable-observability-metrics': 'true' to job arguments.
 	// Default: true.
 	//
-	// Experimental.
+	// Deprecated.
 	EnableObservabilityMetrics *bool `field:"optional" json:"enableObservabilityMetrics" yaml:"enableObservabilityMetrics"`
 	// Enables the Spark UI debugging and monitoring with the specified props.
 	// See: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html
 	//
 	// Default: - Spark UI debugging and monitoring is disabled.
 	//
-	// Experimental.
+	// Deprecated.
 	SparkUI *SparkUIProps `field:"optional" json:"sparkUI" yaml:"sparkUI"`
 	// The worker type and the number of workers allocated when a job runs.
 	// Default: - the job runs with the G_1X worker type and 10 workers.
 	//
-	// Experimental.
+	// Deprecated.
 	WorkerConfiguration *WorkerConfiguration `field:"optional" json:"workerConfiguration" yaml:"workerConfiguration"`
 }
 

@@ -16,9 +16,9 @@ import (
 //
 // See: https://cwiki.apache.org/confluence/display/Hive/SerDe
 //
-// Experimental.
+// Deprecated.
 type SerializationLibrary interface {
-	// Experimental.
+	// Deprecated.
 	ClassName() *string
 }
 
@@ -38,7 +38,7 @@ func (j *jsiiProxy_SerializationLibrary) ClassName() *string {
 }
 
 
-// Experimental.
+// Deprecated.
 func NewSerializationLibrary(className *string) SerializationLibrary {
 	_init_.Initialize()
 
@@ -56,7 +56,7 @@ func NewSerializationLibrary(className *string) SerializationLibrary {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewSerializationLibrary_Override(s SerializationLibrary, className *string) {
 	_init_.Initialize()
 

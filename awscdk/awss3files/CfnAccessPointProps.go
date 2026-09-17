@@ -115,7 +115,10 @@ package awss3files
 //   	Handler: jsii.String("index.handler"),
 //   	Code: lambda.Code_FromAsset(path.join(__dirname, jsii.String("lambda-handler"))),
 //   	Vpc: Vpc,
-//   	Filesystem: lambda.FileSystem_FromS3FilesAccessPoint(accessPoint, jsii.String("/mnt/s3files")),
+//   	Filesystem: lambda.FileSystem_FromS3FilesAccessPoint(accessPoint, jsii.String("/mnt/s3files"), &S3FilesOptions{
+//   		// Enables direct reads and grants s3:GetObject/s3:GetObjectVersion on the bucket to the execution role.
+//   		DirectS3Read: lambda.DirectS3Read_Enabled(bucket),
+//   	}),
 //   })
 //
 // See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3files-accesspoint.html

@@ -10,8 +10,6 @@ package awsdlm
 //   // The values are placeholders you should change.
 //   import "github.com/aws/aws-cdk-go/awscdkcfnpropertymixins"
 //
-//   var excludeVolumeTypes interface{}
-//
 //   exclusionsProperty := &ExclusionsProperty{
 //   	ExcludeBootVolumes: jsii.Boolean(false),
 //   	ExcludeTags: []interface{}{
@@ -20,8 +18,8 @@ package awsdlm
 //   			Value: jsii.String("value"),
 //   		},
 //   	},
-//   	ExcludeVolumeTypes: []interface{}{
-//   		excludeVolumeTypes,
+//   	ExcludeVolumeTypes: []*string{
+//   		jsii.String("excludeVolumeTypes"),
 //   	},
 //   }
 //
@@ -43,6 +41,6 @@ type CfnLifecyclePolicyPropsMixin_ExclusionsProperty struct {
 	// Volumes of the specified types will not be targeted by the policy.
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-exclusions.html#cfn-dlm-lifecyclepolicy-exclusions-excludevolumetypes
 	//
-	ExcludeVolumeTypes interface{} `field:"optional" json:"excludeVolumeTypes" yaml:"excludeVolumeTypes"`
+	ExcludeVolumeTypes *[]*string `field:"optional" json:"excludeVolumeTypes" yaml:"excludeVolumeTypes"`
 }
 

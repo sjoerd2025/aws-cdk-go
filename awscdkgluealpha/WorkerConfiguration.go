@@ -41,15 +41,15 @@ package awscdkgluealpha
 //   	MaxRetries: jsii.Number(2),
 //   })
 //
-// Experimental.
+// Deprecated.
 type WorkerConfiguration struct {
 	// The number of workers of the given `workerType` that are allocated when a job runs.
-	// Experimental.
+	// Deprecated.
 	NumberOfWorkers *float64 `field:"required" json:"numberOfWorkers" yaml:"numberOfWorkers"`
 	// The type of predefined worker that is allocated when a job runs.
 	//
 	// Enum options: Standard, G_1X, G_2X, G_025X, G_4X, G_8X, Z_2X.
-	// Experimental.
+	// Deprecated.
 	WorkerType WorkerType `field:"required" json:"workerType" yaml:"workerType"`
 }
 

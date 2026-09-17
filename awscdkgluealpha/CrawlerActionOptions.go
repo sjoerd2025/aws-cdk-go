@@ -22,24 +22,24 @@ import (
 //   	Timeout: cdk.Duration_Minutes(jsii.Number(30)),
 //   }
 //
-// Experimental.
+// Deprecated.
 type CrawlerActionOptions struct {
 	// The arguments used when this trigger fires.
 	// Default: - no arguments are passed to the job.
 	//
-	// Experimental.
+	// Deprecated.
 	Arguments *map[string]*string `field:"optional" json:"arguments" yaml:"arguments"`
 	// The `SecurityConfiguration` to be used with this action.
 	// Default: - no security configuration is used.
 	//
-	// Experimental.
+	// Deprecated.
 	SecurityConfiguration ISecurityConfiguration `field:"optional" json:"securityConfiguration" yaml:"securityConfiguration"`
 	// The run timeout.
 	//
 	// This is the maximum time that a run can consume resources before it is terminated and enters TIMEOUT status.
 	// Default: - the default timeout value set in the job definition.
 	//
-	// Experimental.
+	// Deprecated.
 	Timeout awscdk.Duration `field:"optional" json:"timeout" yaml:"timeout"`
 }
 

@@ -21,7 +21,7 @@ import (
 //
 // See: https://docs.aws.amazon.com/glue/latest/dg/dqdl.html
 //
-// Experimental.
+// Deprecated.
 type Dqdl interface {
 }
 
@@ -31,7 +31,7 @@ type jsiiProxy_Dqdl struct {
 }
 
 // Create a `Dqdl` from a raw DQDL string.
-// Experimental.
+// Deprecated.
 func Dqdl_FromString(dqdl *string) Dqdl {
 	_init_.Initialize()
 

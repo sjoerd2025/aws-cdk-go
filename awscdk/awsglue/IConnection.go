@@ -1,0 +1,43 @@
+package awsglue
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+
+	"github.com/aws/aws-cdk-go/awscdk/v2"
+	"github.com/aws/aws-cdk-go/awscdk/v2/awsglue/internal"
+)
+
+// Interface representing a created or an imported `Connection`.
+type IConnection interface {
+	awscdk.IResource
+	// The ARN of the connection.
+	ConnectionArn() *string
+	// The name of the connection.
+	ConnectionName() *string
+}
+
+// The jsii proxy for IConnection
+type jsiiProxy_IConnection struct {
+	internal.Type__awscdkIResource
+}
+
+func (j *jsiiProxy_IConnection) ConnectionArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IConnection) ConnectionName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionName",
+		&returns,
+	)
+	return returns
+}
+

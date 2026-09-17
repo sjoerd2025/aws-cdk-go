@@ -23,13 +23,17 @@ func validateFileSystem_FromEfsAccessPointParameters(ap awsefs.IAccessPoint, mou
 	return nil
 }
 
-func validateFileSystem_FromS3FilesAccessPointParameters(ap interfacesawss3files.IAccessPointRef, mountPath *string) error {
+func validateFileSystem_FromS3FilesAccessPointParameters(ap interfacesawss3files.IAccessPointRef, mountPath *string, options *S3FilesOptions) error {
 	if ap == nil {
 		return fmt.Errorf("parameter ap is required, but nil was provided")
 	}
 
 	if mountPath == nil {
 		return fmt.Errorf("parameter mountPath is required, but nil was provided")
+	}
+
+	if err := _jsii_.ValidateStruct(options, func() string { return "parameter options" }); err != nil {
+		return err
 	}
 
 	return nil

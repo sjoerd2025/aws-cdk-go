@@ -11,8 +11,6 @@ import (
 //   // The values are placeholders you should change.
 //   import "github.com/aws/aws-cdk-go/awscdk"
 //
-//   var excludeVolumeTypes interface{}
-//
 //   cfnLifecyclePolicyProps := &CfnLifecyclePolicyProps{
 //   	CopyTags: jsii.Boolean(false),
 //   	CreateInterval: jsii.Number(123),
@@ -31,8 +29,8 @@ import (
 //   				Value: jsii.String("value"),
 //   			},
 //   		},
-//   		ExcludeVolumeTypes: []interface{}{
-//   			excludeVolumeTypes,
+//   		ExcludeVolumeTypes: []*string{
+//   			jsii.String("excludeVolumeTypes"),
 //   		},
 //   	},
 //   	ExecutionRoleArn: jsii.String("executionRoleArn"),
@@ -89,8 +87,8 @@ import (
 //   					Value: jsii.String("value"),
 //   				},
 //   			},
-//   			ExcludeVolumeTypes: []interface{}{
-//   				excludeVolumeTypes,
+//   			ExcludeVolumeTypes: []*string{
+//   				jsii.String("excludeVolumeTypes"),
 //   			},
 //   		},
 //   		ExtendDeletion: jsii.Boolean(false),

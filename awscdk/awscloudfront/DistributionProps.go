@@ -83,7 +83,8 @@ type DistributionProps struct {
 	GeoRestriction GeoRestriction `field:"optional" json:"geoRestriction" yaml:"geoRestriction"`
 	// The HTTP version(s) to enable on the distribution.
 	//
-	// For viewers and CloudFront to use HTTP/2, viewers must support TLS 1.2 or later, and must support server name identification (SNI).
+	// For viewers and CloudFront to use HTTP/2, viewers must support TLS 1.2 or later, and must support Server Name Indication (SNI).
+	// For viewers and CloudFront to use HTTP/3, viewers must support TLS 1.3 and Server Name Indication (SNI).
 	// Default: HttpVersion.HTTP2
 	//
 	HttpVersion HttpVersion `field:"optional" json:"httpVersion" yaml:"httpVersion"`

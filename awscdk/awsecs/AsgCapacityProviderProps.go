@@ -79,9 +79,13 @@ type AsgCapacityProviderProps struct {
 	// Managed instance draining facilitates graceful termination of Amazon ECS instances.
 	//
 	// This allows your service workloads to stop safely and be rescheduled to non-terminating instances.
-	// Infrastructure maintenance and updates are preformed without disruptions to workloads.
-	// To use managed instance draining, set enableManagedDraining to true.
-	// Default: - undefined, which means ECS will use its default behavior (ENABLED).
+	// Infrastructure maintenance and updates are performed without disruptions to workloads.
+	//
+	// When undefined (recommended), CloudFormation will implicitly enable managed draining.
+	// Set to true for explicit enablement or false to explicitly disable this feature.
+	// See: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/enable-managed-instance-draining.html
+	//
+	// Default: - CloudFormation implicitly enables managed draining when not specified.
 	//
 	EnableManagedDraining *bool `field:"optional" json:"enableManagedDraining" yaml:"enableManagedDraining"`
 	// When enabled the scale-in and scale-out actions of the cluster's Auto Scaling Group will be managed for you.

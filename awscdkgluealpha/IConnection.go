@@ -8,14 +8,14 @@ import (
 )
 
 // Interface representing a created or an imported `Connection`.
-// Experimental.
+// Deprecated.
 type IConnection interface {
 	awscdk.IResource
 	// The ARN of the connection.
-	// Experimental.
+	// Deprecated.
 	ConnectionArn() *string
 	// The name of the connection.
-	// Experimental.
+	// Deprecated.
 	ConnectionName() *string
 }
 

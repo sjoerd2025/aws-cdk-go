@@ -63,8 +63,22 @@ import (
 //   			Data: jsii.String("data"),
 //   			DataSchemaVersion: jsii.String("dataSchemaVersion"),
 //   		},
+//   		Agui: &AgUiDescriptorProperty{
+//   			Source: &SourceOnlyDescriptorSourceProperty{
+//   				FromUrl: &SourceOnlyDescriptorSourceFromUrlProperty{
+//   					Url: jsii.String("url"),
+//   				},
+//   			},
+//   		},
 //   		Custom: &CustomDescriptorProperty{
 //   			Data: jsii.String("data"),
+//   		},
+//   		Http: &HttpDescriptorProperty{
+//   			Source: &SourceOnlyDescriptorSourceProperty{
+//   				FromUrl: &SourceOnlyDescriptorSourceFromUrlProperty{
+//   					Url: jsii.String("url"),
+//   				},
+//   			},
 //   		},
 //   		McpServer: &McpServerDescriptorProperty{
 //   			AdditionalData: &McpServerAdditionalDataProperty{

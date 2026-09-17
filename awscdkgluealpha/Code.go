@@ -34,10 +34,10 @@ import (
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type Code interface {
 	// Called when the Job is initialized to allow this object to bind.
-	// Experimental.
+	// Deprecated.
 	Bind(scope constructs.Construct, grantable awsiam.IGrantable) *CodeConfig
 }
 
@@ -46,7 +46,7 @@ type jsiiProxy_Code struct {
 	_ byte // padding
 }
 
-// Experimental.
+// Deprecated.
 func NewCode_Override(c Code) {
 	_init_.Initialize()
 
@@ -58,7 +58,7 @@ func NewCode_Override(c Code) {
 }
 
 // Job code from a local disk path.
-// Experimental.
+// Deprecated.
 func Code_FromAsset(path *string, options *awss3assets.AssetOptions) AssetCode {
 	_init_.Initialize()
 
@@ -78,7 +78,7 @@ func Code_FromAsset(path *string, options *awss3assets.AssetOptions) AssetCode {
 }
 
 // Job code as an S3 object.
-// Experimental.
+// Deprecated.
 func Code_FromBucket(bucket awss3.IBucket, key *string) S3Code {
 	_init_.Initialize()
 

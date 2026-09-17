@@ -1546,6 +1546,14 @@ func init() {
 			"SUCCESS": DestinationType_SUCCESS,
 		},
 	)
+	_jsii_.RegisterClass(
+		"aws-cdk-lib.aws_lambda.DirectS3Read",
+		reflect.TypeOf((*DirectS3Read)(nil)).Elem(),
+		nil, // no members
+		func() interface{} {
+			return &jsiiProxy_DirectS3Read{}
+		},
+	)
 	_jsii_.RegisterStruct(
 		"aws-cdk-lib.aws_lambda.DlqDestinationConfig",
 		reflect.TypeOf((*DlqDestinationConfig)(nil)).Elem(),
@@ -2628,6 +2636,10 @@ func init() {
 			_jsii_.InitJsiiProxy(&j.jsiiProxy_Code)
 			return &j
 		},
+	)
+	_jsii_.RegisterStruct(
+		"aws-cdk-lib.aws_lambda.S3FilesOptions",
+		reflect.TypeOf((*S3FilesOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
 		"aws-cdk-lib.aws_lambda.ScalingOptions",

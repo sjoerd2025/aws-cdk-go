@@ -20,9 +20,9 @@ package awscloudfront
 type HttpVersion string
 
 const (
-	// HTTP 1.1.
+	// HTTP 1.1 only.
 	HttpVersion_HTTP1_1 HttpVersion = "HTTP1_1"
-	// HTTP 2.
+	// HTTP 2 only.
 	HttpVersion_HTTP2 HttpVersion = "HTTP2"
 	// HTTP 2 and HTTP 3.
 	HttpVersion_HTTP2_AND_3 HttpVersion = "HTTP2_AND_3"

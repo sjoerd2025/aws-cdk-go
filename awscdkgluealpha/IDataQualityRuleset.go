@@ -7,14 +7,14 @@ import (
 	"github.com/aws/aws-cdk-go/awscdkgluealpha/v2/internal"
 )
 
-// Experimental.
+// Deprecated.
 type IDataQualityRuleset interface {
 	awscdk.IResource
 	// The ARN of the ruleset.
-	// Experimental.
+	// Deprecated.
 	RulesetArn() *string
 	// The name of the ruleset.
-	// Experimental.
+	// Deprecated.
 	RulesetName() *string
 }
 

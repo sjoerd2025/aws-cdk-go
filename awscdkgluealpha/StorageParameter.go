@@ -35,11 +35,11 @@ import (
 //
 // See: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_EXTERNAL_TABLE.html#r_CREATE_EXTERNAL_TABLE-parameters - under _"TABLE PROPERTIES"_
 //
-// Experimental.
+// Deprecated.
 type StorageParameter interface {
-	// Experimental.
+	// Deprecated.
 	Key() *string
-	// Experimental.
+	// Deprecated.
 	Value() *string
 }
 
@@ -69,7 +69,7 @@ func (j *jsiiProxy_StorageParameter) Value() *string {
 }
 
 
-// Experimental.
+// Deprecated.
 func NewStorageParameter(key *string, value *string) StorageParameter {
 	_init_.Initialize()
 
@@ -87,7 +87,7 @@ func NewStorageParameter(key *string, value *string) StorageParameter {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewStorageParameter_Override(s StorageParameter, key *string, value *string) {
 	_init_.Initialize()
 
@@ -101,7 +101,7 @@ func NewStorageParameter_Override(s StorageParameter, key *string, value *string
 // Identifies if the file contains less or more values for a row than the number of columns specified in the external table definition.
 //
 // This property is only available for an uncompressed text file format.
-// Experimental.
+// Deprecated.
 func StorageParameter_ColumnCountMismatchHandling(value ColumnCountMismatchHandlingAction) StorageParameter {
 	_init_.Initialize()
 
@@ -123,7 +123,7 @@ func StorageParameter_ColumnCountMismatchHandling(value ColumnCountMismatchHandl
 // The type of compression used on the table, when the file name does not contain an extension.
 //
 // This value overrides the compression type specified through the extension.
-// Experimental.
+// Deprecated.
 func StorageParameter_CompressionType(value CompressionType) StorageParameter {
 	_init_.Initialize()
 
@@ -143,7 +143,7 @@ func StorageParameter_CompressionType(value CompressionType) StorageParameter {
 }
 
 // A custom storage parameter.
-// Experimental.
+// Deprecated.
 func StorageParameter_Custom(key *string, value *string) StorageParameter {
 	_init_.Initialize()
 
@@ -163,7 +163,7 @@ func StorageParameter_Custom(key *string, value *string) StorageParameter {
 }
 
 // Determines whether data handling is on for the table.
-// Experimental.
+// Deprecated.
 func StorageParameter_DataCleansingEnabled(value *bool) StorageParameter {
 	_init_.Initialize()
 
@@ -183,7 +183,7 @@ func StorageParameter_DataCleansingEnabled(value *bool) StorageParameter {
 }
 
 // Specifies the action to perform when query results contain invalid UTF-8 character values.
-// Experimental.
+// Deprecated.
 func StorageParameter_InvalidCharHandling(value InvalidCharHandlingAction) StorageParameter {
 	_init_.Initialize()
 
@@ -203,7 +203,7 @@ func StorageParameter_InvalidCharHandling(value InvalidCharHandlingAction) Stora
 }
 
 // Specifies the action to perform when ORC data contains an integer (for example, BIGINT or int64) that is larger than the column definition (for example, SMALLINT or int16).
-// Experimental.
+// Deprecated.
 func StorageParameter_NumericOverflowHandling(value NumericOverflowHandlingAction) StorageParameter {
 	_init_.Initialize()
 
@@ -225,7 +225,7 @@ func StorageParameter_NumericOverflowHandling(value NumericOverflowHandlingActio
 // A property that sets the numRows value for the table definition.
 //
 // To explicitly update an external table's statistics, set the numRows property to indicate the size of the table. Amazon Redshift doesn't analyze external tables to generate the table statistics that the query optimizer uses to generate a query plan. If table statistics aren't set for an external table, Amazon Redshift generates a query execution plan based on an assumption that external tables are the larger tables and local tables are the smaller tables.
-// Experimental.
+// Deprecated.
 func StorageParameter_NumRows(value *float64) StorageParameter {
 	_init_.Initialize()
 
@@ -249,7 +249,7 @@ func StorageParameter_NumRows(value *float64) StorageParameter {
 // This property is ignored for other data formats. If this property is omitted, columns are mapped by `OrcColumnMappingType.NAME` by default.
 // Default: OrcColumnMappingType.NAME
 //
-// Experimental.
+// Deprecated.
 func StorageParameter_OrcSchemaResolution(value OrcColumnMappingType) StorageParameter {
 	_init_.Initialize()
 
@@ -269,7 +269,7 @@ func StorageParameter_OrcSchemaResolution(value OrcColumnMappingType) StoragePar
 }
 
 // Specifies the replacement character to use when you set `INVALID_CHAR_HANDLING` to `REPLACE`.
-// Experimental.
+// Deprecated.
 func StorageParameter_ReplacementChar(value *string) StorageParameter {
 	_init_.Initialize()
 
@@ -289,7 +289,7 @@ func StorageParameter_ReplacementChar(value *string) StorageParameter {
 }
 
 // A property that sets number of rows to skip at the beginning of each source file.
-// Experimental.
+// Deprecated.
 func StorageParameter_SerializationNullFormat(value *string) StorageParameter {
 	_init_.Initialize()
 
@@ -309,7 +309,7 @@ func StorageParameter_SerializationNullFormat(value *string) StorageParameter {
 }
 
 // The number of rows to skip at the top of a CSV file when the table is being created.
-// Experimental.
+// Deprecated.
 func StorageParameter_SkipHeaderLineCount(value *float64) StorageParameter {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func StorageParameter_SkipHeaderLineCount(value *float64) StorageParameter {
 // Specifies how to handle data being loaded that exceeds the length of the data type defined for columns containing VARBYTE data.
 //
 // By default, Redshift Spectrum sets the value to null for data that exceeds the width of the column.
-// Experimental.
+// Deprecated.
 func StorageParameter_SurplusBytesHandling(value SurplusBytesHandlingAction) StorageParameter {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func StorageParameter_SurplusBytesHandling(value SurplusBytesHandlingAction) Sto
 // Specifies how to handle data being loaded that exceeds the length of the data type defined for columns containing VARCHAR, CHAR, or string data.
 //
 // By default, Redshift Spectrum sets the value to null for data that exceeds the width of the column.
-// Experimental.
+// Deprecated.
 func StorageParameter_SurplusCharHandling(value SurplusCharHandlingAction) StorageParameter {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func StorageParameter_SurplusCharHandling(value SurplusCharHandlingAction) Stora
 // this typed factory cannot express `auto`.
 // See: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_EXTERNAL_TABLE.html
 //
-// Experimental.
+// Deprecated.
 func StorageParameter_WriteKmsKeyId(key interfacesawskms.IKeyRef) StorageParameter {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func StorageParameter_WriteKmsKeyId(key interfacesawskms.IKeyRef) StorageParamet
 // A property that sets the maximum size (in MB) of each file written to Amazon S3 by CREATE EXTERNAL TABLE AS.
 //
 // The size must be a valid integer between 5 and 6200. The default maximum file size is 6,200 MB. This table property also applies to any subsequent INSERT statement into the same external table.
-// Experimental.
+// Deprecated.
 func StorageParameter_WriteMaxFileSizeMb(value *float64) StorageParameter {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func StorageParameter_WriteMaxFileSizeMb(value *float64) StorageParameter {
 // When 'write.parallel' is set to off, CREATE EXTERNAL TABLE AS writes to one or more data files serially onto Amazon S3. This table property also applies to any subsequent INSERT statement into the same external table.
 // Default: WriteParallel.ON
 //
-// Experimental.
+// Deprecated.
 func StorageParameter_WriteParallel(value WriteParallel) StorageParameter {
 	_init_.Initialize()
 

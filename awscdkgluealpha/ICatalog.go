@@ -12,29 +12,29 @@ import (
 )
 
 // A Glue Data Catalog, either the implicit account-wide catalog or one created as an `AWS::Glue::Catalog` resource.
-// Experimental.
+// Deprecated.
 type ICatalog interface {
 	interfacesawsglue.ICatalogRef
 	awscdk.IResource
 	// The ARN of the catalog.
-	// Experimental.
+	// Deprecated.
 	CatalogArn() *string
 	// The id of the catalog (for the account-wide catalog, the AWS account id).
-	// Experimental.
+	// Deprecated.
 	CatalogId() *string
 	// The customer-managed KMS key used to encrypt connection passwords, if one was configured.
 	//
 	// Undefined when password encryption uses an AWS-managed key or is not
 	// configured. Grant access to it via `KeyGrants`, e.g.
 	// `if (catalog.connectionPasswordKey) { KeyGrants.fromKey(catalog.connectionPasswordKey).encrypt(grantee); }`.
-	// Experimental.
+	// Deprecated.
 	ConnectionPasswordKey() interfacesawskms.IKeyRef
 	// The customer-managed KMS key used for the catalog's encryption at rest, if one was configured.
 	//
 	// Undefined when encryption is disabled or an AWS-managed key is used. Grant
 	// access to it via `KeyGrants`, e.g.
 	// `if (catalog.encryptionKey) { KeyGrants.fromKey(catalog.encryptionKey).encrypt(grantee); }`.
-	// Experimental.
+	// Deprecated.
 	EncryptionKey() interfacesawskms.IKeyRef
 }
 

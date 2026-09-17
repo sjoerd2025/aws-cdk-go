@@ -17,17 +17,17 @@ package awscdkgluealpha
 //   	Logical: glue_alpha.PredicateLogical_AND,
 //   }
 //
-// Experimental.
+// Deprecated.
 type Predicate struct {
 	// A list of the conditions that determine when the trigger will fire.
 	// Default: - no conditions are provided.
 	//
-	// Experimental.
+	// Deprecated.
 	Conditions *[]Condition `field:"optional" json:"conditions" yaml:"conditions"`
 	// The logical operator to be applied to the conditions.
 	// Default: - PredicateLogical.AND if multiple conditions are provided, no logical operator if only one condition
 	//
-	// Experimental.
+	// Deprecated.
 	Logical PredicateLogical `field:"optional" json:"logical" yaml:"logical"`
 }
 

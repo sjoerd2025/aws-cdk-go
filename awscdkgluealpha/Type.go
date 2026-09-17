@@ -37,13 +37,13 @@ import (
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type Type interface {
 	// Glue InputString for this type.
-	// Experimental.
+	// Deprecated.
 	InputString() *string
 	// Indicates whether this type is a primitive data type.
-	// Experimental.
+	// Deprecated.
 	IsPrimitive() *bool
 }
 

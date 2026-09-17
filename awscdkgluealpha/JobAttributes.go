@@ -24,15 +24,15 @@ import (
 //   	Role: role,
 //   }
 //
-// Experimental.
+// Deprecated.
 type JobAttributes struct {
 	// The name of the job.
-	// Experimental.
+	// Deprecated.
 	JobName *string `field:"required" json:"jobName" yaml:"jobName"`
 	// The IAM role assumed by Glue to run this job.
 	// Default: - undefined.
 	//
-	// Experimental.
+	// Deprecated.
 	Role awsiam.IRole `field:"optional" json:"role" yaml:"role"`
 }
 

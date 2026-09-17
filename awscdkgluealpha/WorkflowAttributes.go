@@ -15,15 +15,15 @@ package awscdkgluealpha
 //   	WorkflowArn: jsii.String("workflowArn"),
 //   }
 //
-// Experimental.
+// Deprecated.
 type WorkflowAttributes struct {
 	// The name of the workflow to import.
-	// Experimental.
+	// Deprecated.
 	WorkflowName *string `field:"required" json:"workflowName" yaml:"workflowName"`
 	// The ARN of the workflow to import.
 	// Default: - derived from the workflow name.
 	//
-	// Experimental.
+	// Deprecated.
 	WorkflowArn *string `field:"optional" json:"workflowArn" yaml:"workflowArn"`
 }
 

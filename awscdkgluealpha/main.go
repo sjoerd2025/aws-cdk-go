@@ -1,4 +1,4 @@
-// The CDK Construct Library for AWS::Glue
+// This module is deprecated. All constructs are now available under aws-cdk-lib/aws-glue
 package awscdkgluealpha
 
 import (

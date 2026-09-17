@@ -34,19 +34,19 @@ import (
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type DataFormat interface {
 	// Classification string given to tables with this data format.
-	// Experimental.
+	// Deprecated.
 	ClassificationString() ClassificationString
 	// `InputFormat` for this data format.
-	// Experimental.
+	// Deprecated.
 	InputFormat() InputFormat
 	// `OutputFormat` for this data format.
-	// Experimental.
+	// Deprecated.
 	OutputFormat() OutputFormat
 	// Serialization library for this data format.
-	// Experimental.
+	// Deprecated.
 	SerializationLibrary() SerializationLibrary
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_DataFormat) SerializationLibrary() SerializationLibrary {
 }
 
 
-// Experimental.
+// Deprecated.
 func NewDataFormat(props *DataFormatProps) DataFormat {
 	_init_.Initialize()
 
@@ -114,7 +114,7 @@ func NewDataFormat(props *DataFormatProps) DataFormat {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewDataFormat_Override(d DataFormat, props *DataFormatProps) {
 	_init_.Initialize()
 

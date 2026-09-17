@@ -88,6 +88,14 @@ func validateCfnLifecyclePolicy_ArnForLifecyclePolicyParameters(resource interfa
 	return nil
 }
 
+func validateCfnLifecyclePolicy_FromLifecyclePolicyArnParameters(scope constructs.Construct, id *string, arn *string) error {
+	return nil
+}
+
+func validateCfnLifecyclePolicy_FromPolicyIdParameters(scope constructs.Construct, id *string, policyId *string) error {
+	return nil
+}
+
 func validateCfnLifecyclePolicy_IsCfnElementParameters(x interface{}) error {
 	return nil
 }

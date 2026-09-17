@@ -838,7 +838,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addResourceDependency", GoMethod: "AddResourceDependency"},
 			_jsii_.MemberMethod{JsiiMethod: "applyCrossStackReferenceStrength", GoMethod: "ApplyCrossStackReferenceStrength"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "attrId", GoGetter: "AttrId"},
 			_jsii_.MemberProperty{JsiiProperty: "attrReplicationTaskArn", GoGetter: "AttrReplicationTaskArn"},
 			_jsii_.MemberProperty{JsiiProperty: "cdcStartPosition", GoGetter: "CdcStartPosition"},
 			_jsii_.MemberProperty{JsiiProperty: "cdcStartTime", GoGetter: "CdcStartTime"},

@@ -8,8 +8,6 @@ package awsdlm
 //   // The values are placeholders you should change.
 //   import "github.com/aws/aws-cdk-go/awscdk"
 //
-//   var excludeVolumeTypes interface{}
-//
 //   policyDetailsProperty := &PolicyDetailsProperty{
 //   	Actions: []interface{}{
 //   		&ActionProperty{
@@ -62,8 +60,8 @@ package awsdlm
 //   				Value: jsii.String("value"),
 //   			},
 //   		},
-//   		ExcludeVolumeTypes: []interface{}{
-//   			excludeVolumeTypes,
+//   		ExcludeVolumeTypes: []*string{
+//   			jsii.String("excludeVolumeTypes"),
 //   		},
 //   	},
 //   	ExtendDeletion: jsii.Boolean(false),

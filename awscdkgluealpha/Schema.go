@@ -34,7 +34,7 @@ import (
 //
 // See: https://docs.aws.amazon.com/athena/latest/ug/data-types.html
 //
-// Experimental.
+// Deprecated.
 type Schema interface {
 }
 
@@ -43,7 +43,7 @@ type jsiiProxy_Schema struct {
 	_ byte // padding
 }
 
-// Experimental.
+// Deprecated.
 func NewSchema() Schema {
 	_init_.Initialize()
 
@@ -58,7 +58,7 @@ func NewSchema() Schema {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewSchema_Override(s Schema) {
 	_init_.Initialize()
 
@@ -70,7 +70,7 @@ func NewSchema_Override(s Schema) {
 }
 
 // Creates an array of some other type.
-// Experimental.
+// Deprecated.
 func Schema_Array(itemType Type) Type {
 	_init_.Initialize()
 
@@ -90,7 +90,7 @@ func Schema_Array(itemType Type) Type {
 }
 
 // Fixed length character data, with a specified length between 1 and 255.
-// Experimental.
+// Deprecated.
 func Schema_Char(length *float64) Type {
 	_init_.Initialize()
 
@@ -113,7 +113,7 @@ func Schema_Char(length *float64) Type {
 //
 // Escape hatch for column types the other `Schema` factories don't model. The
 // `inputString` is emitted verbatim and is not validated.
-// Experimental.
+// Deprecated.
 func Schema_Custom(inputString *string, isPrimitive *bool) Type {
 	_init_.Initialize()
 
@@ -135,7 +135,7 @@ func Schema_Custom(inputString *string, isPrimitive *bool) Type {
 // Creates a decimal type.
 // See: https://docs.aws.amazon.com/athena/latest/ug/data-types.html
 //
-// Experimental.
+// Deprecated.
 func Schema_Decimal(precision *float64, scale *float64) Type {
 	_init_.Initialize()
 
@@ -155,7 +155,7 @@ func Schema_Decimal(precision *float64, scale *float64) Type {
 }
 
 // Creates a map of some primitive key type to some value type.
-// Experimental.
+// Deprecated.
 func Schema_Map(keyType Type, valueType Type) Type {
 	_init_.Initialize()
 
@@ -175,7 +175,7 @@ func Schema_Map(keyType Type, valueType Type) Type {
 }
 
 // Creates a nested structure containing individually named and typed columns.
-// Experimental.
+// Deprecated.
 func Schema_Struct(columns *[]*Column) Type {
 	_init_.Initialize()
 
@@ -195,7 +195,7 @@ func Schema_Struct(columns *[]*Column) Type {
 }
 
 // Variable length character data, with a specified length between 1 and 65535.
-// Experimental.
+// Deprecated.
 func Schema_Varchar(length *float64) Type {
 	_init_.Initialize()
 

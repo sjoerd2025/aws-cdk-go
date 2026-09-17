@@ -39,18 +39,18 @@ package awscdkgluealpha
 //   	MaxRetries: jsii.Number(2),
 //   })
 //
-// Experimental.
+// Deprecated.
 type PythonVersion string
 
 const (
 	// Python 2 (the exact version depends on GlueVersion and JobCommand used).
-	// Experimental.
+	// Deprecated.
 	PythonVersion_TWO PythonVersion = "TWO"
 	// Python 3 (the exact version depends on GlueVersion and JobCommand used).
-	// Experimental.
+	// Deprecated.
 	PythonVersion_THREE PythonVersion = "THREE"
 	// Python 3.9 (the exact version depends on GlueVersion and JobCommand used).
-	// Experimental.
+	// Deprecated.
 	PythonVersion_THREE_NINE PythonVersion = "THREE_NINE"
 )
 

@@ -36,14 +36,14 @@ package awscdkgluealpha
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type DatePartitionProjectionConfigurationProps struct {
 	// Date format for partition values.
 	//
 	// Uses Java SimpleDateFormat patterns.
 	// See: https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
 	//
-	// Experimental.
+	// Deprecated.
 	Format *string `field:"required" json:"format" yaml:"format"`
 	// End date for the partition range (inclusive).
 	//
@@ -52,7 +52,7 @@ type DatePartitionProjectionConfigurationProps struct {
 	// - Relative date using NOW syntax
 	//
 	// Same format constraints as `min`.
-	// Experimental.
+	// Deprecated.
 	Max *string `field:"required" json:"max" yaml:"max"`
 	// Start date for the partition range (inclusive).
 	//
@@ -63,7 +63,7 @@ type DatePartitionProjectionConfigurationProps struct {
 	//   (e.g., 'NOW', 'NOW-3YEARS', 'NOW+1MONTH')
 	// See: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-supported-types.html#partition-projection-date-type
 	//
-	// Experimental.
+	// Deprecated.
 	Min *string `field:"required" json:"min" yaml:"min"`
 	// Interval step (`interval` + `intervalUnit`) between partition values.
 	//
@@ -73,7 +73,7 @@ type DatePartitionProjectionConfigurationProps struct {
 	// the step, so it may be omitted.
 	// Default: - Athena's default step for the format's precision; required when `format` is sub-day precision.
 	//
-	// Experimental.
+	// Deprecated.
 	Step *DateProjectionStep `field:"optional" json:"step" yaml:"step"`
 }
 

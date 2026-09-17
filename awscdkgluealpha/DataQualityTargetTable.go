@@ -18,13 +18,13 @@ import (
 //   	TargetTable: glue.DataQualityTargetTable_FromTableName(database, jsii.String("my_table")),
 //   })
 //
-// Experimental.
+// Deprecated.
 type DataQualityTargetTable interface {
 	// The database name of the target table.
-	// Experimental.
+	// Deprecated.
 	DatabaseName() *string
 	// The table name of the target table.
-	// Experimental.
+	// Deprecated.
 	TableName() *string
 }
 
@@ -55,7 +55,7 @@ func (j *jsiiProxy_DataQualityTargetTable) TableName() *string {
 
 
 // Target an L2 table in a database.
-// Experimental.
+// Deprecated.
 func DataQualityTargetTable_FromTable(database interfacesawsglue.IDatabaseRef, table ITable) DataQualityTargetTable {
 	_init_.Initialize()
 
@@ -78,7 +78,7 @@ func DataQualityTargetTable_FromTable(database interfacesawsglue.IDatabaseRef, t
 //
 // Use this when the table is not
 // modeled as an L2 construct (e.g. it is imported or created elsewhere).
-// Experimental.
+// Deprecated.
 func DataQualityTargetTable_FromTableName(database interfacesawsglue.IDatabaseRef, tableName *string) DataQualityTargetTable {
 	_init_.Initialize()
 

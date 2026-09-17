@@ -10,13 +10,13 @@ package interfacesawsdlm
 //
 //   lifecyclePolicyReference := &LifecyclePolicyReference{
 //   	LifecyclePolicyArn: jsii.String("lifecyclePolicyArn"),
-//   	LifecyclePolicyId: jsii.String("lifecyclePolicyId"),
+//   	PolicyId: jsii.String("policyId"),
 //   }
 //
 type LifecyclePolicyReference struct {
 	// The ARN of the LifecyclePolicy resource.
 	LifecyclePolicyArn *string `field:"required" json:"lifecyclePolicyArn" yaml:"lifecyclePolicyArn"`
-	// The Id of the LifecyclePolicy resource.
-	LifecyclePolicyId *string `field:"required" json:"lifecyclePolicyId" yaml:"lifecyclePolicyId"`
+	// The PolicyId of the LifecyclePolicy resource.
+	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 }
 

@@ -29,7 +29,7 @@ import (
 //   	}),
 //   })
 //
-// Experimental.
+// Deprecated.
 type ConnectionNetwork interface {
 }
 
@@ -39,7 +39,7 @@ type jsiiProxy_ConnectionNetwork struct {
 }
 
 // Pin the connection to a specific subnet.
-// Experimental.
+// Deprecated.
 func ConnectionNetwork_Subnet(subnet awsec2.ISubnet) ConnectionNetwork {
 	_init_.Initialize()
 
@@ -64,7 +64,7 @@ func ConnectionNetwork_Subnet(subnet awsec2.ISubnet) ConnectionNetwork {
 // a single subnet, the first subnet of the selection is used.
 // Default: vpcSubnets - private subnets.
 //
-// Experimental.
+// Deprecated.
 func ConnectionNetwork_Vpc(vpc awsec2.IVpc, vpcSubnets *awsec2.SubnetSelection) ConnectionNetwork {
 	_init_.Initialize()
 

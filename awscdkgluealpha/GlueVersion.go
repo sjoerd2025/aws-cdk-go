@@ -39,30 +39,30 @@ package awscdkgluealpha
 //
 // See: https://docs.aws.amazon.com/glue/latest/dg/add-job.html.
 //
-// Experimental.
+// Deprecated.
 type GlueVersion string
 
 const (
 	// Glue version using Spark 2.2.1 and Python 2.7.
-	// Experimental.
+	// Deprecated.
 	GlueVersion_V0_9 GlueVersion = "V0_9"
 	// Glue version using Spark 2.4.3, Python 2.7 and Python 3.6.
-	// Experimental.
+	// Deprecated.
 	GlueVersion_V1_0 GlueVersion = "V1_0"
 	// Glue version using Spark 2.4.3 and Python 3.7.
-	// Experimental.
+	// Deprecated.
 	GlueVersion_V2_0 GlueVersion = "V2_0"
 	// Glue version using Spark 3.1.1 and Python 3.7.
-	// Experimental.
+	// Deprecated.
 	GlueVersion_V3_0 GlueVersion = "V3_0"
 	// Glue version using Spark 3.3.0 and Python 3.10.
-	// Experimental.
+	// Deprecated.
 	GlueVersion_V4_0 GlueVersion = "V4_0"
 	// Glue version using Spark 3.5.4, Python 3.11, and Scala 2.12.18.
-	// Experimental.
+	// Deprecated.
 	GlueVersion_V5_0 GlueVersion = "V5_0"
 	// Glue version using Spark 3.5.6, Python 3.11, and Scala 2.12.18.
-	// Experimental.
+	// Deprecated.
 	GlueVersion_V5_1 GlueVersion = "V5_1"
 )
 

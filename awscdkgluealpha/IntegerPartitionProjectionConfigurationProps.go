@@ -32,25 +32,25 @@ package awscdkgluealpha
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type IntegerPartitionProjectionConfigurationProps struct {
 	// Maximum value for the integer partition range (inclusive).
-	// Experimental.
+	// Deprecated.
 	Max *float64 `field:"required" json:"max" yaml:"max"`
 	// Minimum value for the integer partition range (inclusive).
-	// Experimental.
+	// Deprecated.
 	Min *float64 `field:"required" json:"min" yaml:"min"`
 	// Number of digits to pad the partition value with leading zeros.
 	//
 	// With digits: 4, partition values: 0001, 0002, ..., 0100
 	// Default: - no static number of digits and no leading zeroes.
 	//
-	// Experimental.
+	// Deprecated.
 	Digits *float64 `field:"optional" json:"digits" yaml:"digits"`
 	// Interval between partition values.
 	// Default: 1.
 	//
-	// Experimental.
+	// Deprecated.
 	Interval *float64 `field:"optional" json:"interval" yaml:"interval"`
 }
 

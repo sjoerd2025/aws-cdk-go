@@ -14,7 +14,7 @@ import (
 )
 
 // Interface representing a new or an imported Glue Job.
-// Experimental.
+// Deprecated.
 type IJob interface {
 	awsiam.IGrantable
 	interfacesawsglue.IJobRef
@@ -22,42 +22,42 @@ type IJob interface {
 	// Create a CloudWatch metric.
 	// See: https://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html
 	//
-	// Experimental.
+	// Deprecated.
 	Metric(metricName *string, type_ MetricType, props *awscloudwatch.MetricOptions) awscloudwatch.Metric
 	// Create a CloudWatch Metric indicating job failure.
-	// Experimental.
+	// Deprecated.
 	MetricFailure(props *awscloudwatch.MetricOptions) awscloudwatch.Metric
 	// Create a CloudWatch Metric indicating job success.
-	// Experimental.
+	// Deprecated.
 	MetricSuccess(props *awscloudwatch.MetricOptions) awscloudwatch.Metric
 	// Create a CloudWatch Metric indicating job timeout.
-	// Experimental.
+	// Deprecated.
 	MetricTimeout(props *awscloudwatch.MetricOptions) awscloudwatch.Metric
 	// Defines a CloudWatch event rule triggered when something happens with this job.
 	// See: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#glue-event-types
 	//
-	// Experimental.
+	// Deprecated.
 	OnEvent(id *string, options *awsevents.OnEventOptions) awsevents.Rule
 	// Defines a CloudWatch event rule triggered when this job moves to the FAILED state.
 	// See: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#glue-event-types
 	//
-	// Experimental.
+	// Deprecated.
 	OnFailure(id *string, options *awsevents.OnEventOptions) awsevents.Rule
 	// Defines a CloudWatch event rule triggered when this job moves to the SUCCEEDED state.
 	// See: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#glue-event-types
 	//
-	// Experimental.
+	// Deprecated.
 	OnSuccess(id *string, options *awsevents.OnEventOptions) awsevents.Rule
 	// Defines a CloudWatch event rule triggered when this job moves to the TIMEOUT state.
 	// See: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#glue-event-types
 	//
-	// Experimental.
+	// Deprecated.
 	OnTimeout(id *string, options *awsevents.OnEventOptions) awsevents.Rule
 	// The ARN of the job.
-	// Experimental.
+	// Deprecated.
 	JobArn() *string
 	// The name of the job.
-	// Experimental.
+	// Deprecated.
 	JobName() *string
 }
 

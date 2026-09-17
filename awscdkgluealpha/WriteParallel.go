@@ -6,15 +6,15 @@ package awscdkgluealpha
 // By default, Redshift Spectrum sets the value to null for data that exceeds the width of the column.
 // See: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_EXTERNAL_TABLE.html#r_CREATE_EXTERNAL_TABLE-parameters - under _"TABLE PROPERTIES"_ > _"surplus_char_handling"_
 //
-// Experimental.
+// Deprecated.
 type WriteParallel string
 
 const (
 	// Write data in parallel.
-	// Experimental.
+	// Deprecated.
 	WriteParallel_ON WriteParallel = "ON"
 	// Write data serially.
-	// Experimental.
+	// Deprecated.
 	WriteParallel_OFF WriteParallel = "OFF"
 )
 

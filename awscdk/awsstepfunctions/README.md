@@ -1262,7 +1262,7 @@ AWS Step functions integrate directly with other services, either through an opt
 Therefore, it is possible to change the `integrationPattern` of services, to enable additional functionality of the said AWS Service:
 
 ```go
-import glue "github.com/aws/aws-cdk-go/awscdkgluealpha"
+import glue "github.com/aws/aws-cdk-go/awscdk"
 
 var submitGlue Job
 

@@ -26,7 +26,7 @@ type CfnSubscriptionMixinProps struct {
 	PlanFamily *string `field:"optional" json:"planFamily" yaml:"planFamily"`
 	// The tier of the pricing plan.
 	//
-	// Upgrades take effect immediately. However, rolling back an upgrade does not revert billing instantly; it schedules a downgrade to the end of the current billing period, and the higher-tier charge applies for the remainder of that month. While a downgrade is scheduled, the CurrentPlanTier property reports the tier currently being billed.
+	// CloudFormation does not change the tier of an existing subscription; a stack update that changes the tier, upgrading or downgrading it, is rejected.
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pricingplanmanager-subscription.html#cfn-pricingplanmanager-subscription-plantier
 	//
 	PlanTier *string `field:"optional" json:"planTier" yaml:"planTier"`

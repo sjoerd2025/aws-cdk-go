@@ -42,32 +42,32 @@ import (
 //
 // See: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html
 //
-// Experimental.
+// Deprecated.
 type ContinuousLoggingProps struct {
 	// Enable continuous logging.
-	// Experimental.
+	// Deprecated.
 	Enabled *bool `field:"required" json:"enabled" yaml:"enabled"`
 	// Apply the provided conversion pattern.
 	//
 	// This is a Log4j Conversion Pattern to customize driver and executor logs.
 	// Default: `%d{yy/MM/dd HH:mm:ss} %p %c{1}: %m%n`.
 	//
-	// Experimental.
+	// Deprecated.
 	ConversionPattern *string `field:"optional" json:"conversionPattern" yaml:"conversionPattern"`
 	// Specify a custom CloudWatch log group name.
 	// Default: - a log group is created with name `/aws-glue/jobs/logs-v2/`.
 	//
-	// Experimental.
+	// Deprecated.
 	LogGroup awslogs.ILogGroup `field:"optional" json:"logGroup" yaml:"logGroup"`
 	// Specify a custom CloudWatch log stream prefix.
 	// Default: - the job run ID.
 	//
-	// Experimental.
+	// Deprecated.
 	LogStreamPrefix *string `field:"optional" json:"logStreamPrefix" yaml:"logStreamPrefix"`
 	// Filter out non-useful Apache Spark driver/executor and Apache Hadoop YARN heartbeat log messages.
 	// Default: true.
 	//
-	// Experimental.
+	// Deprecated.
 	Quiet *bool `field:"optional" json:"quiet" yaml:"quiet"`
 }
 

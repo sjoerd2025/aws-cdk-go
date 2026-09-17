@@ -41,15 +41,15 @@ package awscdkgluealpha
 //   	MaxRetries: jsii.Number(2),
 //   })
 //
-// Experimental.
+// Deprecated.
 type MaxCapacity string
 
 const (
 	// DPU value of 1/16th.
-	// Experimental.
+	// Deprecated.
 	MaxCapacity_DPU_1_16TH MaxCapacity = "DPU_1_16TH"
 	// DPU value of 1.
-	// Experimental.
+	// Deprecated.
 	MaxCapacity_DPU_1 MaxCapacity = "DPU_1"
 )
 

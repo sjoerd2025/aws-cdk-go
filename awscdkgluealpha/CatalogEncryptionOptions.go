@@ -16,17 +16,17 @@ package awscdkgluealpha
 //   	EncryptionAtRest: glue.DataCatalogEncryptionAtRest_KmsWithServiceRole(role, key),
 //   })
 //
-// Experimental.
+// Deprecated.
 type CatalogEncryptionOptions struct {
 	// Connection-password encryption configuration for the catalog.
 	// Default: - connection-password encryption is not managed by CDK.
 	//
-	// Experimental.
+	// Deprecated.
 	ConnectionPasswordEncryption *ConnectionPasswordEncryption `field:"optional" json:"connectionPasswordEncryption" yaml:"connectionPasswordEncryption"`
 	// Encryption-at-rest configuration for the catalog.
 	// Default: - encryption at rest is not managed by CDK (the catalog default applies).
 	//
-	// Experimental.
+	// Deprecated.
 	EncryptionAtRest DataCatalogEncryptionAtRest `field:"optional" json:"encryptionAtRest" yaml:"encryptionAtRest"`
 }
 

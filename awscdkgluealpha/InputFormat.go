@@ -14,9 +14,9 @@ import (
 //
 //   inputFormat := glue_alpha.InputFormat_AVRO()
 //
-// Experimental.
+// Deprecated.
 type InputFormat interface {
-	// Experimental.
+	// Deprecated.
 	ClassName() *string
 }
 
@@ -36,7 +36,7 @@ func (j *jsiiProxy_InputFormat) ClassName() *string {
 }
 
 
-// Experimental.
+// Deprecated.
 func NewInputFormat(className *string) InputFormat {
 	_init_.Initialize()
 
@@ -54,7 +54,7 @@ func NewInputFormat(className *string) InputFormat {
 	return &j
 }
 
-// Experimental.
+// Deprecated.
 func NewInputFormat_Override(i InputFormat, className *string) {
 	_init_.Initialize()
 

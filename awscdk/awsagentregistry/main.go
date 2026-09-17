@@ -117,6 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "applyCrossStackReferenceStrength", GoMethod: "ApplyCrossStackReferenceStrength"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "attrCreatedAt", GoGetter: "AttrCreatedAt"},
+			_jsii_.MemberProperty{JsiiProperty: "attrCreatedBy", GoGetter: "AttrCreatedBy"},
 			_jsii_.MemberProperty{JsiiProperty: "attrRecordArn", GoGetter: "AttrRecordArn"},
 			_jsii_.MemberProperty{JsiiProperty: "attrRecordId", GoGetter: "AttrRecordId"},
 			_jsii_.MemberProperty{JsiiProperty: "attrRegistryArn", GoGetter: "AttrRegistryArn"},
@@ -173,6 +174,10 @@ func init() {
 		reflect.TypeOf((*CfnRegistryRecord_A2aAgentCardDescriptorProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecord.AgUiDescriptorProperty",
+		reflect.TypeOf((*CfnRegistryRecord_AgUiDescriptorProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecord.AgentSkillsAdditionalDataProperty",
 		reflect.TypeOf((*CfnRegistryRecord_AgentSkillsAdditionalDataProperty)(nil)).Elem(),
 	)
@@ -199,6 +204,10 @@ func init() {
 	_jsii_.RegisterStruct(
 		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecord.DescriptorsProperty",
 		reflect.TypeOf((*CfnRegistryRecord_DescriptorsProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecord.HttpDescriptorProperty",
+		reflect.TypeOf((*CfnRegistryRecord_HttpDescriptorProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecord.McpServerAdditionalDataProperty",
@@ -235,6 +244,14 @@ func init() {
 	_jsii_.RegisterStruct(
 		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecord.SkillMdSourceProperty",
 		reflect.TypeOf((*CfnRegistryRecord_SkillMdSourceProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecord.SourceOnlyDescriptorSourceFromUrlProperty",
+		reflect.TypeOf((*CfnRegistryRecord_SourceOnlyDescriptorSourceFromUrlProperty)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecord.SourceOnlyDescriptorSourceProperty",
+		reflect.TypeOf((*CfnRegistryRecord_SourceOnlyDescriptorSourceProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"aws-cdk-lib.aws_agentregistry.CfnRegistryRecordProps",

@@ -22,21 +22,21 @@ package awscdkgluealpha
 //   	ClassificationString: classificationString,
 //   }
 //
-// Experimental.
+// Deprecated.
 type DataFormatProps struct {
 	// `InputFormat` for this data format.
-	// Experimental.
+	// Deprecated.
 	InputFormat InputFormat `field:"required" json:"inputFormat" yaml:"inputFormat"`
 	// `OutputFormat` for this data format.
-	// Experimental.
+	// Deprecated.
 	OutputFormat OutputFormat `field:"required" json:"outputFormat" yaml:"outputFormat"`
 	// Serialization library for this data format.
-	// Experimental.
+	// Deprecated.
 	SerializationLibrary SerializationLibrary `field:"required" json:"serializationLibrary" yaml:"serializationLibrary"`
 	// Classification string given to tables with this data format.
 	// Default: - No classification is specified.
 	//
-	// Experimental.
+	// Deprecated.
 	ClassificationString ClassificationString `field:"optional" json:"classificationString" yaml:"classificationString"`
 }
 

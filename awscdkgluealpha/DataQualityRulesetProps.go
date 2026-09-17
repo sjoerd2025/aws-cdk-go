@@ -15,31 +15,31 @@ import (
 //   	TargetTable: glue.DataQualityTargetTable_FromTableName(database, jsii.String("my_table")),
 //   })
 //
-// Experimental.
+// Deprecated.
 type DataQualityRulesetProps struct {
 	// The DQDL document defining the ruleset's data quality rules.
 	//
 	// Build it with `Dqdl.fromString(...)`.
-	// Experimental.
+	// Deprecated.
 	Dqdl Dqdl `field:"required" json:"dqdl" yaml:"dqdl"`
 	// The name of the ruleset.
-	// Experimental.
+	// Deprecated.
 	RulesetName *string `field:"required" json:"rulesetName" yaml:"rulesetName"`
 	// The target table of the ruleset.
-	// Experimental.
+	// Deprecated.
 	TargetTable DataQualityTargetTable `field:"required" json:"targetTable" yaml:"targetTable"`
 	// The description of the ruleset.
-	// Experimental.
+	// Deprecated.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Policy to apply when the ruleset is removed from the stack.
 	// Default: - resource will be destroyed.
 	//
-	// Experimental.
+	// Deprecated.
 	RemovalPolicy awscdk.RemovalPolicy `field:"optional" json:"removalPolicy" yaml:"removalPolicy"`
 	// Key-Value pairs that define tags for the ruleset.
 	// Default: empty tags.
 	//
-	// Experimental.
+	// Deprecated.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

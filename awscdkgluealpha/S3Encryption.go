@@ -20,7 +20,7 @@ import (
 //   	S3Encryption: glue.S3Encryption_Kms(),
 //   })
 //
-// Experimental.
+// Deprecated.
 type S3Encryption interface {
 }
 
@@ -32,7 +32,7 @@ type jsiiProxy_S3Encryption struct {
 // Server-side encryption (SSE) with an AWS KMS key managed by the account owner.
 // See: https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingKMSEncryption.html
 //
-// Experimental.
+// Deprecated.
 func S3Encryption_Kms(kmsKey interfacesawskms.IKeyRef) S3Encryption {
 	_init_.Initialize()
 
@@ -51,7 +51,7 @@ func S3Encryption_Kms(kmsKey interfacesawskms.IKeyRef) S3Encryption {
 // Server-side encryption (SSE) with an Amazon S3-managed key.
 // See: https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html
 //
-// Experimental.
+// Deprecated.
 func S3Encryption_S3Managed() S3Encryption {
 	_init_.Initialize()
 

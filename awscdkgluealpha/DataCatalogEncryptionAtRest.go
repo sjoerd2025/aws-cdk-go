@@ -25,16 +25,16 @@ import (
 //
 // See: https://docs.aws.amazon.com/glue/latest/webapi/API_EncryptionAtRest.html
 //
-// Experimental.
+// Deprecated.
 type DataCatalogEncryptionAtRest interface {
 	// The customer-managed KMS key used for encryption at rest, if any.
-	// Experimental.
+	// Deprecated.
 	KmsKey() interfacesawskms.IKeyRef
 	// The encryption mode.
-	// Experimental.
+	// Deprecated.
 	Mode() CatalogEncryptionMode
 	// The service role that AWS Glue assumes to access the KMS key, if any.
-	// Experimental.
+	// Deprecated.
 	ServiceRole() awsiam.IRole
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataCatalogEncryptionAtRest) ServiceRole() awsiam.IRole {
 
 
 // Disable encryption at rest for the Data Catalog.
-// Experimental.
+// Deprecated.
 func DataCatalogEncryptionAtRest_Disabled() DataCatalogEncryptionAtRest {
 	_init_.Initialize()
 
@@ -92,7 +92,7 @@ func DataCatalogEncryptionAtRest_Disabled() DataCatalogEncryptionAtRest {
 }
 
 // Encrypt the Data Catalog at rest with an AWS KMS key.
-// Experimental.
+// Deprecated.
 func DataCatalogEncryptionAtRest_Kms(key interfacesawskms.IKeyRef) DataCatalogEncryptionAtRest {
 	_init_.Initialize()
 
@@ -112,7 +112,7 @@ func DataCatalogEncryptionAtRest_Kms(key interfacesawskms.IKeyRef) DataCatalogEn
 //
 // When a customer-managed `key` is provided, the `role` is automatically
 // granted `kms:Encrypt`/`kms:Decrypt`/`kms:GenerateDataKey*` on it.
-// Experimental.
+// Deprecated.
 func DataCatalogEncryptionAtRest_KmsWithServiceRole(role awsiam.IRole, key interfacesawskms.IKeyRef) DataCatalogEncryptionAtRest {
 	_init_.Initialize()
 

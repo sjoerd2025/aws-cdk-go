@@ -23,31 +23,31 @@ package awscdkgluealpha
 //   	},
 //   }
 //
-// Experimental.
+// Deprecated.
 type SparkExtraCodeProps struct {
 	// Additional files, such as configuration files that AWS Glue copies to the working directory of your script before executing it.
 	// See: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html
 	//
 	// Default: - no extra files specified.
 	//
-	// Experimental.
+	// Deprecated.
 	ExtraFiles *[]Code `field:"optional" json:"extraFiles" yaml:"extraFiles"`
 	// Extra Jars S3 URL (optional) S3 URL where additional jar dependencies are located.
 	// Default: - no extra jar files.
 	//
-	// Experimental.
+	// Deprecated.
 	ExtraJars *[]Code `field:"optional" json:"extraJars" yaml:"extraJars"`
 	// Setting this value to true prioritizes the customer's extra JAR files in the classpath.
 	// See:  `--user-jars-first` in https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html
 	//
 	// Default: false - priority is not given to user-provided jars.
 	//
-	// Experimental.
+	// Deprecated.
 	ExtraJarsFirst *bool `field:"optional" json:"extraJarsFirst" yaml:"extraJarsFirst"`
 	// Extra Python Files S3 URL (optional) S3 URL where additional python dependencies are located.
 	// Default: - no extra files.
 	//
-	// Experimental.
+	// Deprecated.
 	ExtraPythonFiles *[]Code `field:"optional" json:"extraPythonFiles" yaml:"extraPythonFiles"`
 }
 

@@ -32,7 +32,7 @@ package awscdkgluealpha
 //   	},
 //   })
 //
-// Experimental.
+// Deprecated.
 type EnumPartitionProjectionConfigurationProps struct {
 	// Explicit list of partition values.
 	//
@@ -43,7 +43,7 @@ type EnumPartitionProjectionConfigurationProps struct {
 	//   	"eu-west-1",
 	//   }
 	//
-	// Experimental.
+	// Deprecated.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

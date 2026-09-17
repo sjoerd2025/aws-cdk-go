@@ -18,7 +18,7 @@ import (
 //   	S3Encryption: glue.S3Encryption_Kms(),
 //   })
 //
-// Experimental.
+// Deprecated.
 type CloudWatchEncryption interface {
 }
 
@@ -28,7 +28,7 @@ type jsiiProxy_CloudWatchEncryption struct {
 }
 
 // Server-side encryption (SSE) with an AWS KMS key managed by the account owner.
-// Experimental.
+// Deprecated.
 func CloudWatchEncryption_Kms(kmsKey interfacesawskms.IKeyRef) CloudWatchEncryption {
 	_init_.Initialize()
 

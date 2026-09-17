@@ -9,14 +9,14 @@ package interfacesawssagemaker
 //   import "github.com/aws/aws-cdk-go/awscdk"
 //
 //   notebookInstanceReference := &NotebookInstanceReference{
+//   	NotebookInstanceArn: jsii.String("notebookInstanceArn"),
 //   	NotebookInstanceId: jsii.String("notebookInstanceId"),
-//   	NotebookInstanceName: jsii.String("notebookInstanceName"),
 //   }
 //
 type NotebookInstanceReference struct {
+	// The ARN of the NotebookInstance resource.
+	NotebookInstanceArn *string `field:"required" json:"notebookInstanceArn" yaml:"notebookInstanceArn"`
 	// The Id of the NotebookInstance resource.
 	NotebookInstanceId *string `field:"required" json:"notebookInstanceId" yaml:"notebookInstanceId"`
-	// The NotebookInstanceName of the NotebookInstance resource.
-	NotebookInstanceName *string `field:"required" json:"notebookInstanceName" yaml:"notebookInstanceName"`
 }
 

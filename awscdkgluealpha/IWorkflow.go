@@ -11,34 +11,34 @@ import (
 // The base interface for Glue Workflow.
 // See: https://docs.aws.amazon.com/glue/latest/dg/workflows_overview.html
 //
-// Experimental.
+// Deprecated.
 type IWorkflow interface {
 	awscdk.IResource
 	// Add a conditional (predicate-based) trigger to the workflow.
 	//
 	// Returns: a reference to the created trigger.
-	// Experimental.
+	// Deprecated.
 	AddConditionalTrigger(id *string, options *ConditionalTriggerOptions) interfacesawsglue.ITriggerRef
 	// Add an EventBridge event-based trigger to the workflow.
 	//
 	// Returns: a reference to the created trigger.
-	// Experimental.
+	// Deprecated.
 	AddEventTrigger(id *string, options *EventTriggerOptions) interfacesawsglue.ITriggerRef
 	// Add an on-demand trigger to the workflow.
 	//
 	// Returns: a reference to the created trigger.
-	// Experimental.
+	// Deprecated.
 	AddOnDemandTrigger(id *string, options *OnDemandTriggerOptions) interfacesawsglue.ITriggerRef
 	// Add a scheduled trigger to the workflow.
 	//
 	// Returns: a reference to the created trigger.
-	// Experimental.
+	// Deprecated.
 	AddScheduledTrigger(id *string, options *ScheduledTriggerOptions) interfacesawsglue.ITriggerRef
 	// The ARN of the workflow.
-	// Experimental.
+	// Deprecated.
 	WorkflowArn() *string
 	// The name of the workflow.
-	// Experimental.
+	// Deprecated.
 	WorkflowName() *string
 }
 

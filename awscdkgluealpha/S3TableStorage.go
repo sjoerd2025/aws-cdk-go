@@ -29,7 +29,7 @@ import (
 //   	DataFormat: glue.DataFormat_JSON(),
 //   })
 //
-// Experimental.
+// Deprecated.
 type S3TableStorage interface {
 }
 
@@ -47,7 +47,7 @@ type jsiiProxy_S3TableStorage struct {
 // which means that `S3Table.grantRead()`/`grantWrite()` will correctly grant
 // S3 access but silently skip the KMS permissions on the key. As a consequence,
 // at runtime, reads and writes will fail with access denied on the key.
-// Experimental.
+// Deprecated.
 func S3TableStorage_FromBucket(bucket awss3.IBucket) S3TableStorage {
 	_init_.Initialize()
 
@@ -69,7 +69,7 @@ func S3TableStorage_FromBucket(bucket awss3.IBucket) S3TableStorage {
 // Store the table's data in a bucket created and managed by the table.
 // Default: - S3-managed (SSE-S3) encryption.
 //
-// Experimental.
+// Deprecated.
 func S3TableStorage_ManagedBucket(encryption S3TableEncryption) S3TableStorage {
 	_init_.Initialize()
 

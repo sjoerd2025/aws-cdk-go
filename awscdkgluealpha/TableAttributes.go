@@ -11,11 +11,11 @@ package awscdkgluealpha
 //   	TableName: jsii.String("tableName"),
 //   }
 //
-// Experimental.
+// Deprecated.
 type TableAttributes struct {
-	// Experimental.
+	// Deprecated.
 	TableArn *string `field:"required" json:"tableArn" yaml:"tableArn"`
-	// Experimental.
+	// Deprecated.
 	TableName *string `field:"required" json:"tableName" yaml:"tableName"`
 }
 

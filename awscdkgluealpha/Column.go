@@ -18,18 +18,18 @@ package awscdkgluealpha
 //   	Comment: jsii.String("comment"),
 //   }
 //
-// Experimental.
+// Deprecated.
 type Column struct {
 	// Name of the column.
-	// Experimental.
+	// Deprecated.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Type of the column.
-	// Experimental.
+	// Deprecated.
 	Type Type `field:"required" json:"type" yaml:"type"`
 	// Coment describing the column.
 	// Default: none.
 	//
-	// Experimental.
+	// Deprecated.
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
 }
 

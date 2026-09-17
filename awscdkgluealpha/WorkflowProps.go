@@ -17,27 +17,27 @@ package awscdkgluealpha
 //   	WorkflowName: jsii.String("workflowName"),
 //   }
 //
-// Experimental.
+// Deprecated.
 type WorkflowProps struct {
 	// A map of properties to use when this workflow is executed.
 	// Default: - no default run properties.
 	//
-	// Experimental.
+	// Deprecated.
 	DefaultRunProperties *map[string]*string `field:"optional" json:"defaultRunProperties" yaml:"defaultRunProperties"`
 	// A description of the workflow.
 	// Default: - no description.
 	//
-	// Experimental.
+	// Deprecated.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The maximum number of concurrent runs allowed for the workflow.
 	// Default: - no limit.
 	//
-	// Experimental.
+	// Deprecated.
 	MaxConcurrentRuns *float64 `field:"optional" json:"maxConcurrentRuns" yaml:"maxConcurrentRuns"`
 	// Name of the workflow.
 	// Default: - a name will be generated.
 	//
-	// Experimental.
+	// Deprecated.
 	WorkflowName *string `field:"optional" json:"workflowName" yaml:"workflowName"`
 }
 

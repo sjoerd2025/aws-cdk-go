@@ -23,15 +23,15 @@ import (
 //
 // See: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html
 //
-// Experimental.
+// Deprecated.
 type SparkUILoggingLocation struct {
 	// The bucket where the Glue job stores the logs.
-	// Experimental.
+	// Deprecated.
 	Bucket awss3.IBucket `field:"required" json:"bucket" yaml:"bucket"`
 	// The path inside the bucket (objects prefix) where the Glue job stores the logs.
 	// Default: '/' - the logs will be written at the root of the bucket.
 	//
-	// Experimental.
+	// Deprecated.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 }
 

@@ -46,7 +46,7 @@ import (
 //   	DataFormat: glue.DataFormat_JSON(),
 //   })
 //
-// Experimental.
+// Deprecated.
 type TableClientSideEncryption interface {
 }
 
@@ -56,7 +56,7 @@ type jsiiProxy_TableClientSideEncryption struct {
 }
 
 // Client-side encryption (CSE-KMS) with an AWS KMS key managed by the account owner.
-// Experimental.
+// Deprecated.
 func TableClientSideEncryption_Kms(key interfacesawskms.IKeyRef) TableClientSideEncryption {
 	_init_.Initialize()
 

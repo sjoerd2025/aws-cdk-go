@@ -58,7 +58,7 @@ type CloudFrontWebDistributionProps struct {
 	// Default: No geo restriction.
 	//
 	GeoRestriction GeoRestriction `field:"optional" json:"geoRestriction" yaml:"geoRestriction"`
-	// The max supported HTTP Versions.
+	// The HTTP version(s) to enable for viewers communicating with CloudFront.
 	// Default: HttpVersion.HTTP2
 	//
 	HttpVersion HttpVersion `field:"optional" json:"httpVersion" yaml:"httpVersion"`

@@ -2,15 +2,15 @@ package awscdkgluealpha
 
 
 // Runtime language of the Glue job.
-// Experimental.
+// Deprecated.
 type JobLanguage string
 
 const (
 	// Scala.
-	// Experimental.
+	// Deprecated.
 	JobLanguage_SCALA JobLanguage = "SCALA"
 	// Python.
-	// Experimental.
+	// Deprecated.
 	JobLanguage_PYTHON JobLanguage = "PYTHON"
 )
 
