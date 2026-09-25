@@ -9,9 +9,9 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-// A special type of `ContainerImage` that uses an ECR repository for the image, but a CloudFormation Parameter for the tag of the image in that repository.
+// A special type of `ContainerImage` that uses an ECR repository for the image, but a CloudFormation Parameter for the tag or digest of the image in that repository.
 //
-// This allows providing this tag through the Parameter at deploy time,
+// This allows providing this tag or digest through the Parameter at deploy time,
 // for example in a CodePipeline that pushes a new tag of the image to the repository during a build step,
 // and then provides that new tag through the CloudFormation Parameter in the deploy step.
 //
@@ -223,9 +223,9 @@ import (
 //
 type TagParameterContainerImage interface {
 	ContainerImage
-	// Returns the name of the CloudFormation Parameter that represents the tag of the image in the ECR repository.
+	// Returns the name of the CloudFormation Parameter that represents the tag or digest of the image in the ECR repository.
 	TagParameterName() *string
-	// Returns the value of the CloudFormation Parameter that represents the tag of the image in the ECR repository.
+	// Returns the value of the CloudFormation Parameter that represents the tag or digest of the image in the ECR repository.
 	TagParameterValue() *string
 	// Called when the image is used by a ContainerDefinition.
 	Bind(scope constructs.Construct, containerDefinition ContainerDefinition) *ContainerImageConfig
@@ -257,29 +257,29 @@ func (j *jsiiProxy_TagParameterContainerImage) TagParameterValue() *string {
 }
 
 
-func NewTagParameterContainerImage(repository awsecr.IRepository) TagParameterContainerImage {
+func NewTagParameterContainerImage(repository awsecr.IRepository, props *TagParameterContainerImageProps) TagParameterContainerImage {
 	_init_.Initialize()
 
-	if err := validateNewTagParameterContainerImageParameters(repository); err != nil {
+	if err := validateNewTagParameterContainerImageParameters(repository, props); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_TagParameterContainerImage{}
 
 	_jsii_.Create(
 		"aws-cdk-lib.aws_ecs.TagParameterContainerImage",
-		[]interface{}{repository},
+		[]interface{}{repository, props},
 		&j,
 	)
 
 	return &j
 }
 
-func NewTagParameterContainerImage_Override(t TagParameterContainerImage, repository awsecr.IRepository) {
+func NewTagParameterContainerImage_Override(t TagParameterContainerImage, repository awsecr.IRepository, props *TagParameterContainerImageProps) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"aws-cdk-lib.aws_ecs.TagParameterContainerImage",
-		[]interface{}{repository},
+		[]interface{}{repository, props},
 		t,
 	)
 }

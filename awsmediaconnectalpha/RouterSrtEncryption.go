@@ -30,7 +30,7 @@ import (
 //   	RouterOutputName: jsii.String("encrypted-output"),
 //   	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(10)),
 //   	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-//   	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_50(),
+//   	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_20(),
 //   	Configuration: awsmediaconnectalpha.RouterOutputConfiguration_Standard(&StandardOutputConfigurationProps{
 //   		Protocol: awsmediaconnectalpha.RouterOutputProtocol_SrtCaller(&SrtCallerOutputProtocolProps{
 //   			DestinationAddress: jsii.String("203.0.113.100"),

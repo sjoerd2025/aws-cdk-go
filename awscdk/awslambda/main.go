@@ -2641,6 +2641,14 @@ func init() {
 		"aws-cdk-lib.aws_lambda.S3FilesOptions",
 		reflect.TypeOf((*S3FilesOptions)(nil)).Elem(),
 	)
+	_jsii_.RegisterEnum(
+		"aws-cdk-lib.aws_lambda.S3ObjectStorageMode",
+		reflect.TypeOf((*S3ObjectStorageMode)(nil)).Elem(),
+		map[string]interface{}{
+			"COPY": S3ObjectStorageMode_COPY,
+			"REFERENCE": S3ObjectStorageMode_REFERENCE,
+		},
+	)
 	_jsii_.RegisterClass(
 		"aws-cdk-lib.aws_lambda.ScalingOptions",
 		reflect.TypeOf((*ScalingOptions)(nil)).Elem(),

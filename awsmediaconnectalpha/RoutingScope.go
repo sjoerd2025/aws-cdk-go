@@ -16,7 +16,7 @@ import (
 //   	RouterInputName: jsii.String("channel-input"),
 //   	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 //   	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 //   	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaLiveChannel(&MediaLiveChannelConfigurationProps{
 //   		Channel: mediaLiveChannel,
 //   		OutputName: jsii.String("router-ts"),

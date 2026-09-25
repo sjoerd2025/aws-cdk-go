@@ -36,8 +36,10 @@ type CfnParametersCodeProps struct {
 	// Default: a new parameter will be created.
 	//
 	ObjectKeyParam awscdk.CfnParameter `field:"optional" json:"objectKeyParam" yaml:"objectKeyParam"`
-	// The ARN of the KMS key used to encrypt the handler code.
-	// Default: - the default server-side encryption with Amazon S3 managed keys(SSE-S3) key will be used.
+	// The KMS key that Lambda uses to encrypt the deployment package in Lambda-managed storage.
+	//
+	// This is not the key used to encrypt the source object in Amazon S3.
+	// Default: - Lambda uses an AWS owned key.
 	//
 	SourceKMSKey interfacesawskms.IKeyRef `field:"optional" json:"sourceKMSKey" yaml:"sourceKMSKey"`
 }

@@ -193,7 +193,7 @@ input := awsmediaconnectalpha.NewRouterInput(stack, jsii.String("FailoverInput")
 	RouterInputName: jsii.String("failover-input"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(10)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterInputConfiguration_Failover(&FailoverConfigurationProps{
 		NetworkInterface: networkInterface,
 		Protocols: []RouterInputProtocol{
@@ -225,7 +225,7 @@ input := awsmediaconnectalpha.NewRouterInput(stack, jsii.String("ChannelInput"),
 	RouterInputName: jsii.String("channel-input"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaLiveChannel(&MediaLiveChannelConfigurationProps{
 		Channel: mediaLiveChannel,
 		OutputName: jsii.String("router-ts"),
@@ -247,7 +247,7 @@ input := awsmediaconnectalpha.NewRouterInput(stack, jsii.String("ChannelInput"),
 	RouterInputName: jsii.String("channel-input"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaLiveChannel(&MediaLiveChannelConfigurationProps{
 		Channel: mediaLiveChannel,
 		OutputName: jsii.String("router-ts"),
@@ -269,7 +269,7 @@ input := awsmediaconnectalpha.NewRouterInput(stack, jsii.String("ChannelInputNoC
 	RouterInputName: jsii.String("channel-input-no-connection"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaLiveChannelWithoutConnection(&MediaLiveChannelConfigurationWithoutConnectionProps{
 		AvailabilityZone: jsii.String("us-east-1a"),
 	}),
@@ -290,7 +290,7 @@ input := awsmediaconnectalpha.NewRouterInput(stack, jsii.String("FlowInput"), &R
 	RouterInputName: jsii.String("flow-input"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaConnectFlow(&MediaConnectFlowConfigurationProps{
 		Flow: flow,
 		FlowOutput: flowOutput,
@@ -308,7 +308,7 @@ input := awsmediaconnectalpha.NewRouterInput(stack, jsii.String("FlowInputNoConn
 	RouterInputName: jsii.String("flow-input-no-connection"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaConnectFlowWithoutConnection(&MediaConnectFlowConfigurationWithoutConnectionProps{
 		AvailabilityZone: jsii.String("us-east-1a"),
 	}),
@@ -356,7 +356,7 @@ output := awsmediaconnectalpha.NewRouterOutput(stack, jsii.String("MediaLiveOutp
 	RouterOutputName: jsii.String("medialive-output"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(15)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_GLOBAL(),
-	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_50(),
+	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterOutputConfiguration_MediaLiveInput(&MediaLiveInputConnectionProps{
 		Input: mediaLiveInput,
 		Pipeline: awsmediaconnectalpha.MediaLivePipeline_PIPELINE_0,
@@ -374,7 +374,7 @@ output := awsmediaconnectalpha.NewRouterOutput(stack, jsii.String("MediaLiveOutp
 	RouterOutputName: jsii.String("medialive-output-no-connection"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(15)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_GLOBAL(),
-	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_50(),
+	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterOutputConfiguration_MediaLiveInputWithoutConnection(&MediaLiveNoInputConnectionProps{
 		AvailabilityZone: jsii.String("us-east-1a"),
 	}),
@@ -394,7 +394,7 @@ output := awsmediaconnectalpha.NewRouterOutput(stack, jsii.String("FlowOutput"),
 	RouterOutputName: jsii.String("flow-output"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_100(),
+	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterOutputConfiguration_MediaConnectFlow(&MediaConnectFlowConnectionProps{
 		Flow: flow,
 	}),
@@ -411,7 +411,7 @@ output := awsmediaconnectalpha.NewRouterOutput(stack, jsii.String("FlowOutputNoC
 	RouterOutputName: jsii.String("flow-output-no-connection"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_100(),
+	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterOutputConfiguration_MediaConnectFlowWithoutConnection(&MediaConnectFlowNoConnectionProps{
 		AvailabilityZone: jsii.String("us-east-1a"),
 	}),
@@ -431,7 +431,7 @@ output := awsmediaconnectalpha.NewRouterOutput(stack, jsii.String("EncryptedOutp
 	RouterOutputName: jsii.String("encrypted-output"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(10)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_50(),
+	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterOutputConfiguration_Standard(&StandardOutputConfigurationProps{
 		Protocol: awsmediaconnectalpha.RouterOutputProtocol_SrtCaller(&SrtCallerOutputProtocolProps{
 			DestinationAddress: jsii.String("203.0.113.100"),
@@ -1363,7 +1363,7 @@ output := awsmediaconnectalpha.NewRouterOutput(stack, jsii.String("EncryptedSrtO
 	RouterOutputName: jsii.String("encrypted-srt-output"),
 	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(10)),
 	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_50(),
+	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_20(),
 	Configuration: awsmediaconnectalpha.RouterOutputConfiguration_Standard(&StandardOutputConfigurationProps{
 		Protocol: awsmediaconnectalpha.RouterOutputProtocol_SrtCaller(&SrtCallerOutputProtocolProps{
 			DestinationAddress: jsii.String("203.0.113.100"),

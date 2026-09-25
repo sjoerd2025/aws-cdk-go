@@ -72,9 +72,13 @@ func validateTagParameterContainerImage_FromTarballParameters(tarballFile *strin
 	return nil
 }
 
-func validateNewTagParameterContainerImageParameters(repository awsecr.IRepository) error {
+func validateNewTagParameterContainerImageParameters(repository awsecr.IRepository, props *TagParameterContainerImageProps) error {
 	if repository == nil {
 		return fmt.Errorf("parameter repository is required, but nil was provided")
+	}
+
+	if err := _jsii_.ValidateStruct(props, func() string { return "parameter props" }); err != nil {
+		return err
 	}
 
 	return nil

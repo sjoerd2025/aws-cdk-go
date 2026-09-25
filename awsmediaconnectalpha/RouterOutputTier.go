@@ -5,7 +5,10 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 )
 
-// Routing tier that determines the maximum bitrate (in Mbps) for a Router Output.
+// Tier for a router output.
+//
+// The tier determines the capacity limits, performance characteristics,
+// and associated costs. The `maximumBitrate` must fall within the limits of the selected tier.
 //
 // Example:
 //   var stack Stack
@@ -16,7 +19,7 @@ import (
 //   	RouterOutputName: jsii.String("medialive-output"),
 //   	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(15)),
 //   	RoutingScope: awsmediaconnectalpha.RoutingScope_GLOBAL(),
-//   	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_50(),
+//   	Tier: awsmediaconnectalpha.RouterOutputTier_OUTPUT_20(),
 //   	Configuration: awsmediaconnectalpha.RouterOutputConfiguration_MediaLiveInput(&MediaLiveInputConnectionProps{
 //   		Input: mediaLiveInput,
 //   		Pipeline: awsmediaconnectalpha.MediaLivePipeline_PIPELINE_0,

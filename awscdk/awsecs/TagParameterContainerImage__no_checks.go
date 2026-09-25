@@ -28,7 +28,7 @@ func validateTagParameterContainerImage_FromTarballParameters(tarballFile *strin
 	return nil
 }
 
-func validateNewTagParameterContainerImageParameters(repository awsecr.IRepository) error {
+func validateNewTagParameterContainerImageParameters(repository awsecr.IRepository, props *TagParameterContainerImageProps) error {
 	return nil
 }
 

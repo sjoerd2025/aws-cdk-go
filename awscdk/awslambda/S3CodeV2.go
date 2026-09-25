@@ -27,6 +27,7 @@ import (
 //
 //   s3CodeV2 := awscdk.Aws_lambda.NewS3CodeV2(bucket, jsii.String("key"), &BucketOptions{
 //   	ObjectVersion: jsii.String("objectVersion"),
+//   	S3ObjectStorageMode: awscdk.*Aws_lambda.S3ObjectStorageMode_COPY,
 //   	SourceKMSKey: keyRef,
 //   })
 //

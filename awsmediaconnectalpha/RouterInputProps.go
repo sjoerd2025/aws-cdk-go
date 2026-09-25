@@ -15,7 +15,7 @@ import (
 //   	RouterInputName: jsii.String("channel-input"),
 //   	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 //   	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 //   	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaLiveChannel(&MediaLiveChannelConfigurationProps{
 //   		Channel: mediaLiveChannel,
 //   		OutputName: jsii.String("router-ts"),
@@ -29,6 +29,8 @@ type RouterInputProps struct {
 	// Experimental.
 	Configuration RouterInputConfiguration `field:"required" json:"configuration" yaml:"configuration"`
 	// The maximum bitrate for the router input.
+	//
+	// Must fall within the limits of the selected `tier`.
 	// Experimental.
 	MaximumBitrate awscdk.Bitrate `field:"required" json:"maximumBitrate" yaml:"maximumBitrate"`
 	// Indicates whether the router input is configured for Regional or global routing.
@@ -54,7 +56,10 @@ type RouterInputProps struct {
 	//
 	// Experimental.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Select a tier based on your maximum bitrate requirements.
+	// Tier for this input.
+	//
+	// The tier determines the capacity limits, performance characteristics,
+	// and associated costs; `maximumBitrate` must fall within its limits.
 	// Default: RouterInputTier.INPUT_20
 	//
 	// Experimental.

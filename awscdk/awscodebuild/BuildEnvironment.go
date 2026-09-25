@@ -67,6 +67,18 @@ type BuildEnvironment struct {
 	// Default: - No fleet will be attached to the project, which will remain on-demand.
 	//
 	Fleet IFleet `field:"optional" json:"fleet" yaml:"fleet"`
+	// The host operating system kernel used for the builds.
+	//
+	// The host kernel does not affect the build environment operating system,
+	// which is determined by the `buildImage`.
+	//
+	// Only supported by the `LINUX_CONTAINER`, `ARM_CONTAINER`, `LINUX_EC2` and `ARM_EC2`
+	// environment types. Not supported by Windows, Lambda or Mac build images.
+	// See: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ProjectEnvironment.html#CodeBuild-Type-ProjectEnvironment-hostKernel
+	//
+	// Default: - the default host kernel chosen by CodeBuild for the build image.
+	//
+	HostKernel HostKernel `field:"optional" json:"hostKernel" yaml:"hostKernel"`
 	// Indicates how the project builds Docker images.
 	//
 	// Specify true to enable

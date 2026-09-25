@@ -31,6 +31,8 @@ type RouterOutputProps struct {
 	// Experimental.
 	Configuration RouterOutputConfiguration `field:"required" json:"configuration" yaml:"configuration"`
 	// The maximum bitrate for the router output.
+	//
+	// Must fall within the limits of the selected `tier`.
 	// Experimental.
 	MaximumBitrate awscdk.Bitrate `field:"required" json:"maximumBitrate" yaml:"maximumBitrate"`
 	// Indicates whether the router output is configured for Regional or global routing.
@@ -56,7 +58,10 @@ type RouterOutputProps struct {
 	//
 	// Experimental.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Routing tier that determines the maximum bitrate (in Mbps) for this output.
+	// Tier for this output.
+	//
+	// The tier determines the capacity limits, performance characteristics,
+	// and associated costs; `maximumBitrate` must fall within its limits.
 	// Default: RouterOutputTier.OUTPUT_20
 	//
 	// Experimental.

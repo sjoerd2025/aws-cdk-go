@@ -13,7 +13,7 @@ package awsmediaconnectalpha
 //   	RouterInputName: jsii.String("channel-input-no-connection"),
 //   	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 //   	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 //   	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaLiveChannelWithoutConnection(&MediaLiveChannelConfigurationWithoutConnectionProps{
 //   		AvailabilityZone: jsii.String("us-east-1a"),
 //   	}),

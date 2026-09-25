@@ -3374,6 +3374,10 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"aws-cdk-lib.aws_ecs.TagParameterContainerImageProps",
+		reflect.TypeOf((*TagParameterContainerImageProps)(nil)).Elem(),
+	)
 	_jsii_.RegisterClass(
 		"aws-cdk-lib.aws_ecs.TaskDefinition",
 		reflect.TypeOf((*TaskDefinition)(nil)).Elem(),

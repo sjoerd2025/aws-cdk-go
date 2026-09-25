@@ -764,6 +764,15 @@ func init() {
 		"aws-cdk-lib.aws_codebuild.GitHubSourceProps",
 		reflect.TypeOf((*GitHubSourceProps)(nil)).Elem(),
 	)
+	_jsii_.RegisterEnum(
+		"aws-cdk-lib.aws_codebuild.HostKernel",
+		reflect.TypeOf((*HostKernel)(nil)).Elem(),
+		map[string]interface{}{
+			"LINUX_KERNEL_4": HostKernel_LINUX_KERNEL_4,
+			"LINUX_KERNEL_6": HostKernel_LINUX_KERNEL_6,
+			"LINUX_KERNEL_LATEST": HostKernel_LINUX_KERNEL_LATEST,
+		},
+	)
 	_jsii_.RegisterInterface(
 		"aws-cdk-lib.aws_codebuild.IArtifacts",
 		reflect.TypeOf((*IArtifacts)(nil)).Elem(),

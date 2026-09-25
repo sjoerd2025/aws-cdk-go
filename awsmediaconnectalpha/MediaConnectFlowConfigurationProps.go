@@ -13,7 +13,7 @@ package awsmediaconnectalpha
 //   	RouterInputName: jsii.String("flow-input"),
 //   	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(20)),
 //   	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 //   	Configuration: awsmediaconnectalpha.RouterInputConfiguration_MediaConnectFlow(&MediaConnectFlowConfigurationProps{
 //   		Flow: flow,
 //   		FlowOutput: flowOutput,

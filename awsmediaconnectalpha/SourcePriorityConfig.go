@@ -16,7 +16,7 @@ import (
 //   	RouterInputName: jsii.String("failover-input"),
 //   	MaximumBitrate: awscdk.Bitrate_Mbps(jsii.Number(10)),
 //   	RoutingScope: awsmediaconnectalpha.RoutingScope_REGIONAL(),
-//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_50(),
+//   	Tier: awsmediaconnectalpha.RouterInputTier_INPUT_20(),
 //   	Configuration: awsmediaconnectalpha.RouterInputConfiguration_Failover(&FailoverConfigurationProps{
 //   		NetworkInterface: networkInterface,
 //   		Protocols: []RouterInputProtocol{

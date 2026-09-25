@@ -38,6 +38,7 @@ flinkRuntimes := []Runtime{
 	flink.Runtime_FLINK_1_18(),
 	flink.Runtime_FLINK_1_19(),
 	flink.Runtime_FLINK_1_20(),
+	flink.Runtime_FLINK_2_2(),
 }
 
 flinkRuntimes.forEach((runtime) => {
@@ -86,7 +87,7 @@ flinkApp := flink.NewApplication(this, jsii.String("Application"), &ApplicationP
 		},
 	},
 	// ...
-	Runtime: flink.Runtime_FLINK_1_20(),
+	Runtime: flink.Runtime_FLINK_2_2(),
 	Code: flink.ApplicationCode_FromBucket(bucket, jsii.String("my-app.jar")),
 })
 ```
@@ -100,7 +101,7 @@ var bucket Bucket
 
 flinkApp := flink.NewApplication(this, jsii.String("Application"), &ApplicationProps{
 	Code: flink.ApplicationCode_FromBucket(bucket, jsii.String("my-app.jar")),
-	Runtime: flink.Runtime_FLINK_1_20(),
+	Runtime: flink.Runtime_FLINK_2_2(),
 	CheckpointingEnabled: jsii.Boolean(true),
 	 // default is true
 	CheckpointInterval: awscdk.Duration_Seconds(jsii.Number(30)),
@@ -131,7 +132,7 @@ var vpc Vpc
 
 flinkApp := flink.NewApplication(this, jsii.String("Application"), &ApplicationProps{
 	Code: flink.ApplicationCode_FromBucket(bucket, jsii.String("my-app.jar")),
-	Runtime: flink.Runtime_FLINK_1_20(),
+	Runtime: flink.Runtime_FLINK_2_2(),
 	Vpc: Vpc,
 })
 ```

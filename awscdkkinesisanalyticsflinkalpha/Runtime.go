@@ -18,7 +18,7 @@ import (
 //   		},
 //   	},
 //   	// ...
-//   	Runtime: flink.Runtime_FLINK_1_20(),
+//   	Runtime: flink.Runtime_FLINK_2_2(),
 //   	Code: flink.ApplicationCode_FromBucket(bucket, jsii.String("my-app.jar")),
 //   })
 //
@@ -148,6 +148,17 @@ func Runtime_FLINK_1_8() Runtime {
 	_jsii_.StaticGet(
 		"@aws-cdk/aws-kinesisanalytics-flink-alpha.Runtime",
 		"FLINK_1_8",
+		&returns,
+	)
+	return returns
+}
+
+func Runtime_FLINK_2_2() Runtime {
+	_init_.Initialize()
+	var returns Runtime
+	_jsii_.StaticGet(
+		"@aws-cdk/aws-kinesisanalytics-flink-alpha.Runtime",
+		"FLINK_2_2",
 		&returns,
 	)
 	return returns

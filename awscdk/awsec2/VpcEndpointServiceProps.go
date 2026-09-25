@@ -36,7 +36,7 @@ type VpcEndpointServiceProps struct {
 	//
 	AllowedPrincipals *[]awsiam.ArnPrincipal `field:"optional" json:"allowedPrincipals" yaml:"allowedPrincipals"`
 	// The Regions from which service consumers can access the service.
-	// Default: - No Region restrictions.
+	// Default: - the region hosting the service only.
 	//
 	AllowedRegions *[]*string `field:"optional" json:"allowedRegions" yaml:"allowedRegions"`
 	// Indicates whether to enable the built-in Contributor Insights rules provided by AWS PrivateLink.

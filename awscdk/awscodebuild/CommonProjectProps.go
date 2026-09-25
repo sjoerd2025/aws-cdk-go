@@ -67,6 +67,7 @@ import (
 //   			},
 //   		},
 //   		Fleet: fleet,
+//   		HostKernel: awscdk.*Aws_codebuild.HostKernel_LINUX_KERNEL_4,
 //   		Privileged: jsii.Boolean(false),
 //   	},
 //   	EnvironmentVariables: map[string]BuildEnvironmentVariable{
